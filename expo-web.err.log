@@ -1,0 +1,21 @@
+C:\AdNav\MoodQuote\node_modules\expo\node_modules\@expo\cli\build\src\utils\errors.js:130
+    throw error;
+    ^
+
+Error: ENOENT: no such file or directory, watch 'C:\AdNav\MoodQuote\node_modules\.expo-font-iBnECHcq\local-maven-repo\host\exp\exponent\expo.modules.font'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2538:36)
+    at FallbackWatcher._watchdir (C:\AdNav\MoodQuote\node_modules\@expo\metro\node_modules\metro-file-map\src\watchers\FallbackWatcher.js:119:33)
+    at C:\AdNav\MoodQuote\node_modules\@expo\metro\node_modules\metro-file-map\src\watchers\FallbackWatcher.js:219:22
+    at Walker.<anonymous> (C:\AdNav\MoodQuote\node_modules\@expo\metro\node_modules\metro-file-map\src\watchers\FallbackWatcher.js:358:5)
+    at Walker.emit (node:events:509:28)
+    at C:\AdNav\MoodQuote\node_modules\walker\lib\walker.js:69:16
+    at FSReqCallback.oncomplete (node:fs:185:23) {
+  errno: -4058,
+  syscall: 'watch',
+  code: 'ENOENT',
+  path: 'C:\\AdNav\\MoodQuote\\node_modules\\.expo-font-iBnECHcq\\local-maven-repo\\host\\exp\\exponent\\expo.modules.font',
+  filename: 'C:\\AdNav\\MoodQuote\\node_modules\\.expo-font-iBnECHcq\\local-maven-repo\\host\\exp\\exponent\\expo.modules.font'
+}
+
+Node.js v24.15.0

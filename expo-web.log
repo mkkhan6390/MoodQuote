@@ -1,0 +1,93 @@
+
+> moodquote@1.0.0 web
+> expo start --web --port 8081
+
+Starting project at C:\AdNav\MoodQuote
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web .\index.ts ▓▓▓▓▓▓▓░░░░░░░░░ 46.9% (37/54)
+Web .\index.ts ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.3% (293/299)
+Web Bundled 6536ms index.ts (299 modules)
+ LOG  [web] Logs will appear in the browser console
+Web .\index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 23ms index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
+Unable to resolve "./EvilIcons" from "node_modules\@expo\vector-icons\build\Icons.js"
+[0m [90m 2 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mAntDesign[39m } [36mfrom[39m [32m'./AntDesign'[39m[33m;[39m
+ [90m 3 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEntypo[39m } [36mfrom[39m [32m'./Entypo'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEvilIcons[39m } [36mfrom[39m [32m'./EvilIcons'[39m[33m;[39m
+ [90m   |[39m                                       [31m[1m^[22m[39m
+ [90m 5 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFeather[39m } [36mfrom[39m [32m'./Feather'[39m[33m;[39m
+ [90m 6 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontisto[39m } [36mfrom[39m [32m'./Fontisto'[39m[33m;[39m
+ [90m 7 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontAwesome[39m } [36mfrom[39m [32m'./FontAwesome'[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules\@expo\vector-icons\build\Icons.js
+ | import "./EvilIcons"
+
+ src\components\Optioncard.tsx
+ | import "@expo/vector-icons"
+
+ App.tsx
+ | import "./src/components/Optioncard"
+
+ index.ts
+ | import "./App"
+
+ 
+ | import "./index.ts"
+
+Unable to resolve "./EvilIcons" from "node_modules\@expo\vector-icons\build\Icons.js"
+[0m [90m 2 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mAntDesign[39m } [36mfrom[39m [32m'./AntDesign'[39m[33m;[39m
+ [90m 3 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEntypo[39m } [36mfrom[39m [32m'./Entypo'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEvilIcons[39m } [36mfrom[39m [32m'./EvilIcons'[39m[33m;[39m
+ [90m   |[39m                                       [31m[1m^[22m[39m
+ [90m 5 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFeather[39m } [36mfrom[39m [32m'./Feather'[39m[33m;[39m
+ [90m 6 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontisto[39m } [36mfrom[39m [32m'./Fontisto'[39m[33m;[39m
+ [90m 7 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontAwesome[39m } [36mfrom[39m [32m'./FontAwesome'[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules\@expo\vector-icons\build\Icons.js
+ | import "./EvilIcons"
+
+ src\components\Optioncard.tsx
+ | import "@expo/vector-icons"
+
+ App.tsx
+ | import "./src/components/Optioncard"
+
+ index.ts
+ | import "./App"
+
+ 
+ | import "./index.ts"
+
+Unable to resolve "./EvilIcons" from "node_modules\@expo\vector-icons\build\Icons.js"
+[0m [90m 2 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mAntDesign[39m } [36mfrom[39m [32m'./AntDesign'[39m[33m;[39m
+ [90m 3 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEntypo[39m } [36mfrom[39m [32m'./Entypo'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mEvilIcons[39m } [36mfrom[39m [32m'./EvilIcons'[39m[33m;[39m
+ [90m   |[39m                                       [31m[1m^[22m[39m
+ [90m 5 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFeather[39m } [36mfrom[39m [32m'./Feather'[39m[33m;[39m
+ [90m 6 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontisto[39m } [36mfrom[39m [32m'./Fontisto'[39m[33m;[39m
+ [90m 7 |[39m [36mexport[39m { [36mdefault[39m [36mas[39m [33mFontAwesome[39m } [36mfrom[39m [32m'./FontAwesome'[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules\@expo\vector-icons\build\Icons.js
+ | import "./EvilIcons"
+
+ src\components\Optioncard.tsx
+ | import "@expo/vector-icons"
+
+ App.tsx
+ | import "./src/components/Optioncard"
+
+ index.ts
+ | import "./App"
+
+ 
+ | import "./index.ts"
+

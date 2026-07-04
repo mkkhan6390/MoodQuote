@@ -1,74 +1,188 @@
 {
   "moods": ["happy", "sad", "lost", "lonely", "energetic", "confused"],
   "categories": [
+   {
+  "id": "religion",
+  "name": "Religion",
+  "accent": "#4F46E5",
+  "icon": "book-outline",
+  "subcategories": [
     {
-      "id": "religion",
-      "name": "Religion",
-      "accent": "#7C5CFC",
-      "subcategories": [
-        {
-          "id": "buddhism",
-          "name": "Buddhism",
-          "figures": ["Buddha", "Thich Nhat Hanh", "Pema Chodron", "Dalai Lama", "Dogen"]
-        },
-        {
-          "id": "christianity",
-          "name": "Christianity",
-          "figures": ["Jesus", "C.S. Lewis", "Mother Teresa", "St. Augustine", "Desmond Tutu"]
-        }
-      ]
+      "id": "islam",
+      "name": "Islam",
+      "quotes": {
+        "happy": [
+          {
+            "text": "Indeed, with hardship comes ease.",
+            "author": "Quran",
+            "source": "Surah Ash-Sharh (94:5)",
+            "type": "verified"
+          },
+          {
+            "text": "So remember Me; I will remember you.",
+            "author": "Quran",
+            "source": "Surah Al-Baqarah (2:152)",
+            "type": "verified"
+          }
+        ],
+        "sad": [
+          {
+            "text": "And do not despair of the mercy of Allah.",
+            "author": "Quran",
+            "source": "Surah Az-Zumar (39:53)",
+            "type": "verified"
+          },
+          {
+            "text": "Allah does not burden a soul beyond that it can bear.",
+            "author": "Quran",
+            "source": "Surah Al-Baqarah (2:286)",
+            "type": "verified"
+          }
+        ],
+        "lost": [
+          {
+            "text": "Guide us to the straight path.",
+            "author": "Quran",
+            "source": "Surah Al-Fatihah (1:6)",
+            "type": "verified"
+          }
+        ],
+        "lonely": [
+          {
+            "text": "Indeed, Allah is with the patient.",
+            "author": "Quran",
+            "source": "Surah Al-Baqarah (2:153)",
+            "type": "verified"
+          }
+        ],
+        "energetic": [
+          {
+            "text": "Race toward forgiveness from your Lord and a Garden as wide as the heavens and earth.",
+            "author": "Quran",
+            "source": "Surah Al-Hadid (57:21)",
+            "type": "verified"
+          }
+        ],
+        "confused": [
+          {
+            "text": "And whoever relies upon Allah—then He is sufficient for him.",
+            "author": "Quran",
+            "source": "Surah At-Talaq (65:3)",
+            "type": "verified"
+          }
+        ]
+      }
     },
     {
-      "id": "anime",
-      "name": "Anime",
-      "accent": "#FF6B6B",
-      "subcategories": [
-        {
-          "id": "naruto",
-          "name": "Naruto",
-          "figures": ["Naruto Uzumaki", "Kakashi Hatake", "Jiraiya", "Hinata Hyuga", "Rock Lee"]
-        },
-        {
-          "id": "one-piece",
-          "name": "One Piece",
-          "figures": ["Monkey D. Luffy", "Roronoa Zoro", "Nami", "Sanji", "Nico Robin"]
-        }
-      ]
+      "id": "christianity",
+      "name": "Christianity",
+      "quotes": {
+        "happy": [
+          {
+            "text": "Rejoice always.",
+            "author": "Bible",
+            "source": "1 Thessalonians 5:16",
+            "type": "verified"
+          }
+        ],
+        "sad": [
+          {
+            "text": "Come to me, all who labor and are heavy laden, and I will give you rest.",
+            "author": "Jesus Christ",
+            "source": "Matthew 11:28",
+            "type": "verified"
+          }
+        ],
+        "lost": [
+          {
+            "text": "Trust in the Lord with all your heart, and do not lean on your own understanding.",
+            "author": "Bible",
+            "source": "Proverbs 3:5–6",
+            "type": "verified"
+          }
+        ],
+        "lonely": [
+          {
+            "text": "I will never leave you nor forsake you.",
+            "author": "Bible",
+            "source": "Hebrews 13:5",
+            "type": "verified"
+          }
+        ],
+        "energetic": [
+          {
+            "text": "I can do all things through Him who strengthens me.",
+            "author": "Bible",
+            "source": "Philippians 4:13",
+            "type": "verified"
+          }
+        ],
+        "confused": [
+          {
+            "text": "Your word is a lamp to my feet and a light to my path.",
+            "author": "Bible",
+            "source": "Psalm 119:105",
+            "type": "verified"
+          }
+        ]
+      }
     },
     {
-      "id": "science",
-      "name": "Science",
-      "accent": "#00A6A6",
-      "subcategories": [
-        {
-          "id": "physics",
-          "name": "Physics",
-          "figures": ["Albert Einstein", "Richard Feynman", "Marie Curie", "Isaac Newton", "Carl Sagan"]
-        },
-        {
-          "id": "space",
-          "name": "Space",
-          "figures": ["Katherine Johnson", "Neil Armstrong", "Mae Jemison", "Sally Ride", "Stephen Hawking"]
-        }
-      ]
-    },
-    {
-      "id": "tv",
-      "name": "TV",
-      "accent": "#F2A900",
-      "subcategories": [
-        {
-          "id": "sitcoms",
-          "name": "Sitcoms",
-          "figures": ["Michael Scott", "Leslie Knope", "Ted Lasso", "Phil Dunphy", "Jake Peralta"]
-        },
-        {
-          "id": "fantasy",
-          "name": "Fantasy",
-          "figures": ["Gandalf", "Jon Snow", "Daenerys Targaryen", "Geralt of Rivia", "Eleven"]
-        }
-      ]
+      "id": "hinduism",
+      "name": "Hinduism",
+      "quotes": {
+        "happy": [
+          {
+            "text": "One who is not disturbed by happiness and distress is certainly eligible for liberation.",
+            "author": "Bhagavad Gita",
+            "source": "2:15",
+            "type": "verified"
+          }
+        ],
+        "sad": [
+          {
+            "text": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.",
+            "author": "Bhagavad Gita",
+            "source": "2:47",
+            "type": "verified"
+          }
+        ],
+        "lost": [
+          {
+            "text": "Whenever righteousness declines and unrighteousness rises, I manifest Myself.",
+            "author": "Bhagavad Gita",
+            "source": "4:7",
+            "type": "verified"
+          }
+        ],
+        "lonely": [
+          {
+            "text": "The Supreme Lord is situated in everyone's heart.",
+            "author": "Bhagavad Gita",
+            "source": "18:61",
+            "type": "verified"
+          }
+        ],
+        "energetic": [
+          {
+            "text": "Therefore arise and perform your duty.",
+            "author": "Bhagavad Gita",
+            "source": "2:37",
+            "type": "verified"
+          }
+        ],
+        "confused": [
+          {
+            "text": "Surrender unto Me alone. I shall deliver you from all sinful reactions. Do not fear.",
+            "author": "Bhagavad Gita",
+            "source": "18:66",
+            "type": "verified"
+          }
+        ]
+      }
     }
+  ]
+}
   ],
   "quoteTemplates": {
     "happy": [
@@ -265,3 +379,6 @@
     ]
   }
 }
+
+
+
