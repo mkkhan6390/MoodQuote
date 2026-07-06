@@ -305,6 +305,187 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '800',
   },
+
+  // ─── Profile & Graphical Chart Styles ─────────────────────────────────────
+  profileScroll: {
+    paddingBottom: 40,
+    gap: 20,
+  },
+
+  statsRow: {
+    flexDirection: 'row',
+    gap: 10,
+    justifyContent: 'space-between',
+  },
+
+  statBox: {
+    flex: 1,
+    borderRadius: 18,
+    borderWidth: 1,
+    paddingVertical: 14,
+    paddingHorizontal: 8,
+    alignItems: 'center',
+    gap: 4,
+    elevation: 1,
+  },
+
+  statValue: {
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: 0.2,
+  },
+
+  statLabel: {
+    fontSize: 11,
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 0.3,
+  },
+
+  chartCard: {
+    borderRadius: 22,
+    borderWidth: 1,
+    padding: 18,
+    gap: 16,
+    elevation: 2,
+  },
+
+  chartTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+    letterSpacing: 0.1,
+  },
+
+  chartRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    height: 140,
+    justifyContent: 'space-between',
+    paddingHorizontal: 8,
+    paddingBottom: 6,
+  },
+
+  chartCol: {
+    alignItems: 'center',
+    gap: 6,
+    flex: 1,
+  },
+
+  chartBarWrap: {
+    width: 22,
+    height: 110,
+    borderRadius: 999,
+    justifyContent: 'flex-end',
+    overflow: 'hidden',
+  },
+
+  chartBar: {
+    width: '100%',
+    borderRadius: 999,
+  },
+
+  chartLabel: {
+    fontSize: 11,
+    fontWeight: '700',
+  },
+
+  tabsRow: {
+    flexDirection: 'row',
+    borderRadius: 999,
+    padding: 4,
+    gap: 4,
+  },
+
+  tab: {
+    flex: 1,
+    paddingVertical: 8,
+    borderRadius: 999,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  tabText: {
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 0.2,
+  },
+
+  historyHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 8,
+  },
+
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+    letterSpacing: 0.1,
+  },
+
+  clearTextButton: {
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+  },
+
+  clearText: {
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.2,
+  },
+
+  historyList: {
+    gap: 10,
+  },
+
+  historyItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 18,
+    borderWidth: 1,
+    padding: 14,
+    gap: 12,
+  },
+
+  historyIcon: {
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  historyDetails: {
+    flex: 1,
+    gap: 2,
+  },
+
+  historyMeta: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+  },
+
+  historyLabel: {
+    fontSize: 15,
+    fontWeight: '700',
+  },
+
+  historyTime: {
+    fontSize: 11,
+    fontWeight: '600',
+  },
+
+  historySub: {
+    fontSize: 12,
+  },
+
+  emptyText: {
+    textAlign: 'center',
+    fontSize: 14,
+    fontWeight: '600',
+    paddingVertical: 32,
+  },
 });
 
 export default styles;

@@ -22,13 +22,15 @@ import { ThemeProvider, useAppTheme } from './src/context/ThemeContext';
 import Progress from './src/components/Progressbar';
 import QuotePage from './src/pages/Quote';
 import PickerPage from './src/pages/SelectionPage';
+import ProfilePage from './src/pages/ProfilePage';
+import { logMood } from './src/api/history';
 
 const moods = ['happy', 'sad', 'lost', 'lonely', 'energetic', 'confused'] as const;
 
 type Mood = (typeof moods)[number];
 type Category = (typeof quoteData.categories)[number];
 type Subcategory = Category['subcategories'][number];
-type Step = 'category' | 'subcategory' | 'mood' | 'quote';
+type Step = 'category' | 'subcategory' | 'mood' | 'quote' | 'profile';
 
 const steps: Step[] = ['category', 'subcategory', 'mood', 'quote'];
 
@@ -191,7 +193,8 @@ function AppShell() {
 
     setQuoteIndex(
       getRandomIndex(availableQuotes.length)
-    ); setStep('quote');
+    );
+    setStep('quote');
   };
 
   const refreshQuote = () => {
@@ -215,6 +218,11 @@ function AppShell() {
   }, []);
 
   const goBack = useCallback(() => {
+    if (step === 'profile') {
+      setStep('category');
+      return;
+    }
+
     if (step === 'quote') {
       setMood(null);
       setQuoteIndex(0);
@@ -320,23 +328,47 @@ function AppShell() {
           {/* Row 1: nav + wordmark + theme toggle */}
           <View style={styles.topHeaderRow}>
 
-            <Pressable
-              onPress={goBack}
-              style={[
-                styles.iconBtn,
-                {
-                  backgroundColor: colors.pill,
-                  borderColor: colors.border,
-                },
-              ]}
-            >
-              <Text style={[styles.backArrow, { color: colors.text }]}>←</Text>
-            </Pressable>
+            {step === 'category' ? (
+              <Pressable
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  setStep('profile');
+                }}
+                style={[
+                  styles.iconBtn,
+                  {
+                    backgroundColor: colors.pill,
+                    borderColor: colors.border,
+                  },
+                ]}
+              >
+                <Ionicons name="person-outline" size={17} color={colors.text} />
+              </Pressable>
+            ) : (
+              <Pressable
+                onPress={goBack}
+                style={[
+                  styles.iconBtn,
+                  {
+                    backgroundColor: colors.pill,
+                    borderColor: colors.border,
+                  },
+                ]}
+              >
+                <Text style={[styles.backArrow, { color: colors.text }]}>←</Text>
+              </Pressable>
+            )}
 
-            {/* Wordmark */}
+            {/* Wordmark / Centered Title */}
             <View style={styles.wordmarkWrap}>
-              <Text style={[styles.wordmark, { color: colors.text }]}>Mood</Text>
-              <Text style={[styles.wordmarkAccent, { color: themeColor }]}>Quote</Text>
+              {step === 'profile' ? (
+                <Text style={[styles.wordmark, { color: colors.text }]}>Profile</Text>
+              ) : (
+                <>
+                  <Text style={[styles.wordmark, { color: colors.text }]}>Mood</Text>
+                  <Text style={[styles.wordmarkAccent, { color: themeColor }]}>Quote</Text>
+                </>
+              )}
             </View>
 
             {/* Theme toggle */}
@@ -363,7 +395,9 @@ function AppShell() {
           </View>
 
           {/* Row 2: progress strip */}
-          <Progress activeStepIndex={activeStepIndex} color={themeColor} />
+          {step !== 'profile' && (
+            <Progress activeStepIndex={activeStepIndex} color={themeColor} />
+          )}
 
         </View>
 
@@ -437,7 +471,7 @@ function AppShell() {
             />
           )}
 
-          {step === 'quote' && subcategory && mood && (
+          {step === 'quote' && category && subcategory && mood && (
             <QuotePage
               color={themeColor}
               compact={compact}
@@ -446,9 +480,14 @@ function AppShell() {
               quote={selectedQuote}
               background={currentBackground}
               restart={restart}
+              category={category.name}
               subcategory={subcategory.name}
               refreshQuote={refreshQuote}
             />
+          )}
+
+          {step === 'profile' && (
+            <ProfilePage />
           )}
 
         </Animated.View>
