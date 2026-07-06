@@ -23,7 +23,14 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow MoodQuote to access your photos.",
+          "savePhotosPermission": "Allow MoodQuote to save photos to your library."
+        }
+      ]
     ]
   }
 }

@@ -28,7 +28,7 @@ export default function useQuoteExport({
       throw new Error('Quote card not available.');
     }
 
-    const uri = await captureRef(cardRef, {
+    const uri = await captureRef(cardRef.current, {
       format: 'png',
       quality: 1,
       result: 'tmpfile',
@@ -44,7 +44,7 @@ export default function useQuoteExport({
       );
 
       const { status } =
-        await MediaLibrary.requestPermissionsAsync();
+        await MediaLibrary.requestPermissionsAsync(true);
 
       if (status !== 'granted') {
         Alert.alert(
@@ -63,7 +63,7 @@ export default function useQuoteExport({
         'Quote has been saved to your gallery.'
       );
     } catch (err) {
-      console.log(err);
+      console.error('Error saving quote image to library:', err);
 
       Alert.alert(
         'Error',
