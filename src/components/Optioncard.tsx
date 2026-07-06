@@ -9,7 +9,7 @@ import {
 
 import * as Haptics from 'expo-haptics';
 import { Ionicons } from '@expo/vector-icons';
-import { LinearGradient } from 'expo-linear-gradient';
+import { useAppTheme } from '../context/ThemeContext';
 
 type IconName = React.ComponentProps<typeof Ionicons>['name'];
 
@@ -32,12 +32,13 @@ export default function OptionCard({
   icon?: IconName;
   delay?: number;
 }) {
+  const { colors } = useAppTheme();
   const fade = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     Animated.timing(fade, {
       toValue: 1,
-      duration: 450,
+      duration: 380,
       delay,
       useNativeDriver: true,
     }).start();
@@ -51,7 +52,7 @@ export default function OptionCard({
           {
             translateY: fade.interpolate({
               inputRange: [0, 1],
-              outputRange: [20, 0],
+              outputRange: [14, 0],
             }),
           },
         ],
@@ -59,9 +60,7 @@ export default function OptionCard({
     >
       <Pressable
         accessibilityRole="button"
-        android_ripple={{
-          color: `${accent}20`,
-        }}
+        android_ripple={{ color: `${accent}18` }}
         onPress={async () => {
           await Haptics.selectionAsync();
           onPress();
@@ -69,62 +68,33 @@ export default function OptionCard({
         style={({ pressed }) => [
           styles.card,
           {
-            flexBasis: columns === 3 ? '31%' : '48%',
-            minHeight: compact ? 105 : 115,
-            transform: [{ scale: pressed ? 0.97 : 1 }],
+            opacity: pressed ? 0.82 : 1,
+            transform: [{ scale: pressed ? 0.985 : 1 }],
+            backgroundColor: colors.surface,
+            borderColor: colors.border,
           },
         ]}
       >
-        <LinearGradient
-          colors={[accent, `${accent}AA`]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 0, y: 1 }}
-          style={styles.leftAccent}
-        />
-
-        <View style={styles.topRow}>
-          <View
-            style={[
-              styles.iconContainer,
-              {
-                backgroundColor: `${accent}15`,
-              },
-            ]}
-          >
-            <Ionicons
-              name={icon}
-              size={24}
-              color={accent}
-            />
-          </View>
-
-          <Ionicons
-            name="chevron-forward"
-            size={18}
-            color="#BFC5CF"
-          />
+        {/* Icon pill */}
+        <View style={[styles.iconWrap, { backgroundColor: `${accent}20` }]}>
+          <Ionicons name={icon} size={22} color={accent} />
         </View>
 
+        {/* Label + detail */}
         <View style={styles.content}>
           <Text
-            numberOfLines={2}
-            style={[
-              styles.title,
-              compact && {
-                fontSize: 16,
-              },
-            ]}
+            numberOfLines={1}
+            style={[styles.label, { color: colors.text }, compact && { fontSize: 15 }]}
           >
             {label}
           </Text>
-
-          <Text
-            numberOfLines={1}
-            style={styles.subtitle}
-          >
+          <Text numberOfLines={1} style={[styles.detail, { color: colors.textSub }]}>
             {detail}
           </Text>
         </View>
+
+        {/* Chevron */}
+        <Ionicons name="chevron-forward" size={17} color={colors.textMuted} />
       </Pressable>
     </Animated.View>
   );
@@ -132,83 +102,37 @@ export default function OptionCard({
 
 const styles = StyleSheet.create({
   card: {
-    overflow: 'hidden',
-
-    backgroundColor: '#FFFFFF',
-
-    borderRadius: 22,
-
-    padding: 16,
-
-    marginBottom: 12,
-
-    borderWidth: 1,
-
-    borderColor: '#EEF2F7',
-
-    shadowColor: '#000',
-
-    shadowOpacity: 0.06,
-
-    shadowRadius: 18,
-
-    shadowOffset: {
-      width: 0,
-      height: 8,
-    },
-
-    elevation: 4,
-  },
-
-  leftAccent: {
-    position: 'absolute',
-
-    left: 0,
-
-    top: 0,
-
-    bottom: 0,
-
-    width: 5,
-  },
-
-  topRow: {
     flexDirection: 'row',
-
-    justifyContent: 'space-between',
-
     alignItems: 'center',
+    borderRadius: 18,
+    borderWidth: 1,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    gap: 14,
   },
 
-  iconContainer: {
-    width: 48,
-
-    height: 48,
-
-    borderRadius: 16,
-
+  iconWrap: {
+    width: 46,
+    height: 46,
+    borderRadius: 14,
     justifyContent: 'center',
-
     alignItems: 'center',
+    flexShrink: 0,
   },
 
   content: {
-    marginTop: 14,
+    flex: 1,
+    gap: 3,
   },
 
-  title: {
-    fontSize: 18,
-
+  label: {
+    fontSize: 16,
     fontWeight: '700',
-
-    color: '#111827',
-
-    marginBottom: 4,
+    letterSpacing: 0.1,
   },
 
-  subtitle: {
-    fontSize: 13,
-
-    color: '#6B7280',
+  detail: {
+    fontSize: 12,
+    fontWeight: '500',
   },
 });

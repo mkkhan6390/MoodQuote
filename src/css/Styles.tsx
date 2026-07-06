@@ -1,10 +1,135 @@
-import {
-  StyleSheet
-} from 'react-native';
+import { StyleSheet } from 'react-native';
+
+// NOTE: Color values are now in src/context/ThemeContext.tsx
+// This file contains ONLY layout/geometry styles that never change with theme.
 
 const styles = StyleSheet.create({
+
+  // ─── Shell ────────────────────────────────────────────────────────────────
   screen: {
     flex: 1,
+  },
+
+  container: {
+    flex: 1,
+    paddingHorizontal: 20,
+  },
+
+  // ─── Two-row branded top header ───────────────────────────────────────────
+  topHeader: {
+    paddingTop: 8,
+    paddingBottom: 12,
+    gap: 12,
+    paddingHorizontal: 20,
+  },
+
+  topHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  wordmarkWrap: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 1,
+  },
+
+  wordmark: {
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: 0.3,
+  },
+
+  wordmarkAccent: {
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: 0.3,
+  },
+
+  stepPill: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 999,
+    borderWidth: 1,
+  },
+
+  stepPillText: {
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.4,
+  },
+
+  // ─── Icon buttons (back + theme toggle) ───────────────────────────────────
+  iconBtn: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  backArrow: {
+    fontSize: 18,
+    marginTop: -1,
+  },
+
+  // ─── Hero (unused — kept as a shell for future use) ───────────────────────
+  hero: {
+    alignItems: 'center',
+    paddingVertical: 14,
+    marginBottom: 4,
+  },
+
+  heroCircle: {
+    width: 82,
+    height: 82,
+    borderRadius: 41,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 14,
+  },
+
+  heroTitle: {
+    fontSize: 24,
+    fontWeight: '800',
+    textAlign: 'center',
+    lineHeight: 30,
+    letterSpacing: 0.2,
+  },
+
+  heroSubtitle: {
+    fontSize: 14,
+    marginTop: 6,
+    lineHeight: 20,
+    textAlign: 'center',
+    width: '80%',
+  },
+
+  // ─── Blobs ────────────────────────────────────────────────────────────────
+  blob: {
+    position: 'absolute',
+    width: 260,
+    height: 260,
+    borderRadius: 130,
+  },
+
+  blobLarge: {
+    position: 'absolute',
+    width: 320,
+    height: 320,
+    borderRadius: 160,
+  },
+
+  // ─── Legacy / compatibility ────────────────────────────────────────────────
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingTop: 6,
+    paddingBottom: 8,
+    minHeight: 52,
   },
   shell: {
     flex: 1,
@@ -18,13 +143,11 @@ const styles = StyleSheet.create({
     minHeight: 52,
   },
   brand: {
-    color: '#102A43',
     fontSize: 18,
     fontWeight: '900',
     letterSpacing: 0,
   },
   stepText: {
-    color: '#627D98',
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 0,
@@ -32,15 +155,12 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   backButton: {
-    backgroundColor: '#FFFFFF',
-    borderColor: '#D9E2EC',
-    borderRadius: 8,
+    borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 16,
     paddingVertical: 10,
   },
   backText: {
-    color: '#243B53',
     fontSize: 14,
     fontWeight: '900',
   },
@@ -61,11 +181,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-between',
   },
-//   hero: {
-//     flexShrink: 1,
-//     gap: 8,
-//     paddingTop: 12,
-//   },
   eyebrow: {
     fontSize: 13,
     fontWeight: '900',
@@ -73,26 +188,24 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   title: {
-    color: '#102A43',
-    fontSize: 34,
+    fontSize: 30,
     fontWeight: '900',
     letterSpacing: 0,
-    lineHeight: 39,
+    lineHeight: 36,
   },
   titleCompact: {
-    fontSize: 29,
-    lineHeight: 34,
+    fontSize: 25,
+    lineHeight: 30,
   },
   subtitle: {
-    color: '#52606D',
-    fontSize: 16,
-    fontWeight: '600',
-    lineHeight: 23,
+    fontSize: 15,
+    fontWeight: '500',
+    lineHeight: 22,
     maxWidth: 620,
   },
   subtitleCompact: {
-    fontSize: 14,
-    lineHeight: 20,
+    fontSize: 13,
+    lineHeight: 19,
   },
   optionGrid: {
     flexDirection: 'row',
@@ -102,8 +215,7 @@ const styles = StyleSheet.create({
     paddingBottom: 4,
   },
   optionCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 8,
+    borderRadius: 16,
     borderWidth: 1,
     justifyContent: 'space-between',
     padding: 14,
@@ -114,23 +226,21 @@ const styles = StyleSheet.create({
     width: 44,
   },
   optionLabel: {
-    color: '#102A43',
-    fontSize: 20,
-    fontWeight: '900',
-    letterSpacing: 0,
-    lineHeight: 24,
-    marginTop: 14,
-  },
-  optionLabelCompact: {
-    fontSize: 17,
-    lineHeight: 21,
-  },
-  optionDetail: {
-    color: '#627D98',
-    fontSize: 12,
+    fontSize: 18,
     fontWeight: '800',
     letterSpacing: 0,
-    marginTop: 10,
+    lineHeight: 22,
+    marginTop: 12,
+  },
+  optionLabelCompact: {
+    fontSize: 16,
+    lineHeight: 20,
+  },
+  optionDetail: {
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0,
+    marginTop: 8,
     textTransform: 'uppercase',
   },
   quotePage: {
@@ -139,47 +249,31 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingTop: 8,
   },
-  quoteAura: {
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 8,
-    borderWidth: 2,
-    height: 104,
-    justifyContent: 'center',
-    width: 146,
-  },
-  auraText: {
-    fontSize: 24,
-    fontWeight: '900',
-  },
   quoteCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 8,
+    borderRadius: 20,
     borderWidth: 1,
     gap: 10,
     padding: 22,
     width: '100%',
   },
   quoteMark: {
-    fontSize: 48,
+    fontSize: 42,
     fontWeight: '900',
     lineHeight: 48,
   },
   quote: {
-    color: '#102A43',
-    fontSize: 24,
-    fontWeight: '800',
+    fontSize: 22,
+    fontWeight: '700',
     letterSpacing: 0,
-    lineHeight: 33,
+    lineHeight: 30,
   },
   quoteCompact: {
-    fontSize: 20,
-    lineHeight: 28,
+    fontSize: 19,
+    lineHeight: 27,
   },
   quoteMeta: {
-    color: '#627D98',
     fontSize: 13,
-    fontWeight: '900',
+    fontWeight: '800',
     letterSpacing: 0,
     textTransform: 'uppercase',
   },
@@ -189,7 +283,7 @@ const styles = StyleSheet.create({
   },
   primaryAction: {
     alignItems: 'center',
-    borderRadius: 8,
+    borderRadius: 14,
     minHeight: 52,
     justifyContent: 'center',
     paddingHorizontal: 18,
@@ -197,110 +291,20 @@ const styles = StyleSheet.create({
   primaryActionText: {
     color: '#FFFFFF',
     fontSize: 16,
-    fontWeight: '900',
+    fontWeight: '800',
   },
   secondaryAction: {
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    borderColor: '#D9E2EC',
-    borderRadius: 8,
+    borderRadius: 14,
     borderWidth: 1,
     minHeight: 48,
     justifyContent: 'center',
     paddingHorizontal: 18,
+    alignItems: 'center',
   },
   secondaryActionText: {
-    color: '#243B53',
     fontSize: 15,
-    fontWeight: '900',
+    fontWeight: '800',
   },
-
-  screen:{
-    flex:1,
-    backgroundColor:"#F8FAFC"
-},
-
-container:{
-    flex:1,
-    paddingHorizontal:22
-},
-
-header:{
-    flexDirection:"row",
-    alignItems:"center",
-    marginTop:12,
-    marginBottom:10
-},
-
-logo:{
-    fontSize:26,
-    fontWeight:"800",
-    color:"#111827",
-    flex:1,
-    textAlign:"center",
-    marginRight:40
-},
-
-backCircle:{
-    width:42,
-    height:42,
-    borderRadius:21,
-    backgroundColor:"#FFFFFF",
-    justifyContent:"center",
-    alignItems:"center",
-    elevation:4
-},
-
-backArrow:{
-    fontSize:22
-},
-
-hero:{
-    alignItems:"center",
-    marginBottom:18
-},
-
-heroCircle:{
-    width:110,
-    height:110,
-    borderRadius:55,
-    justifyContent:"center",
-    alignItems:"center",
-    backgroundColor:"#FFFFFF",
-    elevation:6,
-    marginBottom:18
-},
-
-heroTitle:{
-    fontSize:30,
-    fontWeight:"800",
-    color:"#111827",
-    textAlign:"center",
-    lineHeight:38
-},
-
-heroSubtitle:{
-    fontSize:15,
-    color:"#6B7280",
-    marginTop:10,
-    lineHeight:24,
-    textAlign:"center",
-    width:"85%"
-},
-
-blob:{
-    position:"absolute",
-    width:240,
-    height:240,
-    borderRadius:120
-},
-
-blobLarge:{
-    position:"absolute",
-    width:300,
-    height:300,
-    borderRadius:150
-}
 });
 
 export default styles;

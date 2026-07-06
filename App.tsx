@@ -17,9 +17,7 @@ import { quoteBackgrounds } from "./src/constants/backgrounds";
 import { LinearGradient } from 'expo-linear-gradient';
 import LottieView from 'lottie-react-native';
 import * as Haptics from 'expo-haptics';
-
-
-
+import { ThemeProvider, useAppTheme } from './src/context/ThemeContext';
 
 import Progress from './src/components/Progressbar';
 import QuotePage from './src/pages/Quote';
@@ -64,7 +62,9 @@ const moodIcons: Record<Mood, React.ComponentProps<typeof Ionicons>['name']> = {
 
 const getRandomIndex = (length: number) => Math.floor(Math.random() * length);
 
-export default function App() {
+// Inner component — must live inside ThemeProvider
+function AppShell() {
+  const { colors, isDark, toggleTheme } = useAppTheme();
   const [step, setStep] = useState<Step>('category');
   const [category, setCategory] = useState<Category | null>(null);
   const [subcategory, setSubcategory] = useState<Subcategory | null>(null);
@@ -206,6 +206,14 @@ export default function App() {
     setQuoteIndex(nextIndex);
   };
 
+  const restart = useCallback(() => {
+    setCategory(null);
+    setSubcategory(null);
+    setMood(null);
+    setQuoteIndex(0);
+    setStep('category');
+  }, []);
+
   const goBack = useCallback(() => {
     if (step === 'quote') {
       setMood(null);
@@ -213,25 +221,6 @@ export default function App() {
       setStep('mood');
       return;
     }
-
-    useEffect(() => {
-      console.log('Setting up back button handler. Current step:', step);
-      const subscription = BackHandler.addEventListener(
-        'hardwareBackPress',
-        () => {
-
-          console.log('Back button pressed. Current step:', step);
-          if (step === 'category') {
-            return false;
-          }
-
-          goBack();
-          return true;
-        }
-      );
-
-      return () => subscription.remove();
-    }, [step, goBack]);
 
     if (step === 'mood') {
       setSubcategory(null);
@@ -244,27 +233,41 @@ export default function App() {
       setStep('category');
       return;
     }
-  }, [step]);
 
-  const restart = () => {
-    setCategory(null);
-    setSubcategory(null);
-    setMood(null);
-    setQuoteIndex(0);
-    setStep('category');
-  };
+    if (step === 'category') {
+      restart();
+      return;
+    }
+  }, [step, restart]);
+
+  useEffect(() => {
+    console.log('Setting up back button handler. Current step:', step);
+    const subscription = BackHandler.addEventListener(
+      'hardwareBackPress',
+      () => {
+        console.log('Back button pressed. Current step:', step);
+        if (step === 'category') {
+          return false;
+        }
+        goBack();
+        return true;
+      }
+    );
+
+    return () => subscription.remove();
+  }, [step, goBack]);
 
   return (
-    <SafeAreaView style={styles.screen}>
-      <StatusBar style="dark" />
+    <SafeAreaView style={[styles.screen, { backgroundColor: colors.bg }]}>
+      <StatusBar style={colors.statusBar} />
 
       {/* Background */}
 
       <LinearGradient
         colors={[
-          "#F8FAFC",
-          `${themeColor}15`,
-          "#FFFFFF"
+          colors.bg,
+          `${themeColor}28`,
+          colors.bg,
         ]}
         style={StyleSheet.absoluteFill}
       />
@@ -275,14 +278,14 @@ export default function App() {
         style={[
           styles.blob,
           {
-            backgroundColor: `${themeColor}20`,
-            top: -70,
-            left: -90,
+            backgroundColor: `${themeColor}${isDark ? '30' : '22'}`,
+            top: -80,
+            left: -100,
             transform: [
               {
                 translateY: blob1.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [-10, 15]
+                  outputRange: [-10, 18]
                 })
               }
             ]
@@ -294,14 +297,14 @@ export default function App() {
         style={[
           styles.blobLarge,
           {
-            backgroundColor: `${themeColor}15`,
-            right: -100,
-            bottom: 120,
+            backgroundColor: `${themeColor}${isDark ? '22' : '18'}`,
+            right: -110,
+            bottom: 100,
             transform: [
               {
                 translateY: blob2.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [20, -20]
+                  outputRange: [20, -22]
                 })
               }
             ]
@@ -312,61 +315,57 @@ export default function App() {
       <View style={styles.container}>
 
         {/* HEADER */}
-        {step !== 'quote' && (
-          <>
-            <View style={styles.header}>
+        <View style={styles.topHeader}>
 
-              {step !== "category" &&
+          {/* Row 1: nav + wordmark + theme toggle */}
+          <View style={styles.topHeaderRow}>
 
-                <Pressable
-                  onPress={goBack}
-                  style={styles.backCircle}
-                >
-                  <Text style={styles.backArrow}>
-                    ←
-                  </Text>
-                </Pressable>
+            <Pressable
+              onPress={goBack}
+              style={[
+                styles.iconBtn,
+                {
+                  backgroundColor: colors.pill,
+                  borderColor: colors.border,
+                },
+              ]}
+            >
+              <Text style={[styles.backArrow, { color: colors.text }]}>←</Text>
+            </Pressable>
 
-              }
-
-              <Text style={styles.logo}>
-                MoodQuote
-              </Text>
-
+            {/* Wordmark */}
+            <View style={styles.wordmarkWrap}>
+              <Text style={[styles.wordmark, { color: colors.text }]}>Mood</Text>
+              <Text style={[styles.wordmarkAccent, { color: themeColor }]}>Quote</Text>
             </View>
 
-            {/* HERO */}
+            {/* Theme toggle */}
+            <Pressable
+              onPress={() => {
+                Haptics.selectionAsync();
+                toggleTheme();
+              }}
+              style={[
+                styles.iconBtn,
+                {
+                  backgroundColor: colors.pill,
+                  borderColor: colors.border,
+                },
+              ]}
+            >
+              <Ionicons
+                name={isDark ? 'sunny-outline' : 'moon-outline'}
+                size={18}
+                color={colors.text}
+              />
+            </Pressable>
 
-            <View style={styles.hero}>
+          </View>
 
-              {/* Replace with Lottie later */}
+          {/* Row 2: progress strip */}
+          <Progress activeStepIndex={activeStepIndex} color={themeColor} />
 
-              <View style={styles.heroCircle}>
-
-                <Text
-                  style={{
-                    fontSize: 60
-                  }}
-                >
-                  🌙
-                </Text>
-
-              </View>
-
-              <Text style={styles.heroTitle}>
-                Find words that
-                {"\n"}
-                understand you.
-              </Text>
-
-              <Text style={styles.heroSubtitle}>
-                Discover timeless wisdom based on
-                your thoughts, emotions and mood.
-              </Text>
-
-            </View>
-          </>
-        )}
+        </View>
 
 
         {/* Pages */}
@@ -406,7 +405,6 @@ export default function App() {
               compact={compact}
               columns={optionColumns}
               eyebrow={category.name}
-              illustration="🏛️"
               title="Choose a Personality"
               subtitle="Pick someone whose perspective you'd like to hear."
               options={category.subcategories.map((item) => ({
@@ -426,7 +424,6 @@ export default function App() {
               compact={compact}
               columns={optionColumns}
               eyebrow="Mood"
-              illustration="🌈"
               title="How are you feeling today?"
               subtitle="Choose the emotion that best matches your current state."
               options={moods.map((item) => ({
@@ -459,5 +456,14 @@ export default function App() {
       </View>
 
     </SafeAreaView>
+  );
+}
+
+// Root — provides theme to entire tree
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppShell />
+    </ThemeProvider>
   );
 }

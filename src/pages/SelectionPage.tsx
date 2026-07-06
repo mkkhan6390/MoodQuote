@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import OptionCard from '../components/Optioncard';
+import { useAppTheme } from '../context/ThemeContext';
 
 export default function PickerPage({
   color,
@@ -17,7 +18,6 @@ export default function PickerPage({
   options,
   subtitle,
   title,
-//   illustration = '📚',
 }: {
   color: string;
   columns: number;
@@ -33,179 +33,133 @@ export default function PickerPage({
   }[];
   subtitle: string;
   title: string;
-//   illustration?: string;
 }) {
-
+  const { colors } = useAppTheme();
   const fade = useRef(new Animated.Value(0)).current;
-
+  console.log("options: ", options);
   useEffect(() => {
-    Animated.timing(fade,{
-      toValue:1,
-      duration:500,
-      useNativeDriver:true
+    Animated.timing(fade, {
+      toValue: 1,
+      duration: 420,
+      useNativeDriver: true,
     }).start();
-  },[]);
+  }, []);
 
   return (
-
     <Animated.View
       style={{
-        flex:1,
-        opacity:fade,
-        transform:[
+        flex: 1,
+        opacity: fade,
+        transform: [
           {
-            translateY:fade.interpolate({
-              inputRange:[0,1],
-              outputRange:[20,0]
-            })
-          }
-        ]
+            translateY: fade.interpolate({
+              inputRange: [0, 1],
+              outputRange: [16, 0],
+            }),
+          },
+        ],
       }}
     >
-
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.container}
       >
 
-        {/* Hero */}
+        {/* Header */}
+        <View style={styles.header}>
 
-        <View style={styles.hero}>
-
-          {/* <View
-            style={[
-              styles.heroIcon,
-              {
-                backgroundColor:`${color}15`
-              }
-            ]}
-          >
-            <Text style={styles.emoji}>
-              {/* {illustration} 
+          {/* Eyebrow badge */}
+          <View style={[styles.badge, { backgroundColor: `${color}22` }]}>
+            <Text style={[styles.badgeText, { color }]}>
+              {eyebrow}
             </Text>
-          </View> */}
+          </View>
 
-          <Text style={styles.title}>
+          <Text style={[styles.title, compact && styles.titleCompact, { color: colors.text }]}>
             {title}
           </Text>
 
-          {/* <Text style={styles.subtitle}>
+          <Text style={[styles.subtitle, compact && styles.subtitleCompact, { color: colors.textSub }]}>
             {subtitle}
-          </Text> */}
+          </Text>
 
         </View>
 
-        {/* Badge */}
+        {/* Divider */}
+        <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-        {/* <View
-          style={[
-            styles.badge,
-            {
-              backgroundColor:`${color}15`
-            }
-          ]}
-        >
-          <Text
-            style={[
-              styles.badgeText,
-              {
-                color
-              }
-            ]}
-          >
-            {eyebrow}
-          </Text>
-        </View> */}
-
-        {/* Grid */}
-
-        <View style={styles.grid}>
-
-          {options.map((item,index)=>
-
+        {/* List */}
+        <View style={styles.list}>
+          {options.map((item, index) =>
             <OptionCard
-
               key={item.id}
-
               {...item}
-
               compact={compact}
-
               columns={columns}
-
-              delay={index*70}
-
+              delay={index * 55}
             />
-
           )}
-
         </View>
 
       </ScrollView>
-
     </Animated.View>
-
   );
-
 }
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
 
-container:{
-paddingBottom:40
-},
+  container: {
+    paddingBottom: 48,
+  },
 
-hero:{
-alignItems:"center",
-marginBottom:18
-},
+  header: {
+    paddingBottom: 16,
+    gap: 6,
+  },
 
-heroIcon:{
-width:90,
-height:90,
-borderRadius:45,
-justifyContent:"center",
-alignItems:"center",
-marginBottom:16
-},
+  badge: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: 999,
+    marginBottom: 4,
+  },
 
-emoji:{
-fontSize:42
-},
+  badgeText: {
+    fontWeight: '700',
+    fontSize: 12,
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
+  },
 
-title:{
-fontSize:28,
-fontWeight:"800",
-color:"#111827",
-textAlign:"center"
-},
+  title: {
+    fontSize: 28,
+    fontWeight: '800',
+    letterSpacing: 0.1,
+    lineHeight: 34,
+  },
 
-subtitle:{
-marginTop:8,
-fontSize:15,
-lineHeight:22,
-color:"#6B7280",
-textAlign:"center",
-paddingHorizontal:20
-},
+  titleCompact: {
+    fontSize: 23,
+    lineHeight: 29,
+  },
 
-badge:{
-alignSelf:"flex-start",
-paddingHorizontal:16,
-paddingVertical:8,
-borderRadius:30,
-marginBottom:18
-},
+  subtitle: {
+    fontSize: 14,
+    lineHeight: 20,
+    marginTop: 2,
+  },
 
-badgeText:{
-fontWeight:"700",
-fontSize:13,
-letterSpacing:.6,
-textTransform:"uppercase"
-},
+  subtitleCompact: {
+    fontSize: 13,
+    lineHeight: 18,
+  },
 
-grid:{
-gap:12
-}
-
+  divider: {
+    height: 1,
+    marginVertical: 16,
+  },
+  list: {
+    gap: 10,
+  },
 });

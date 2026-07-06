@@ -9,6 +9,7 @@ import {
 
 import { BlurView } from "expo-blur";
 import { LinearGradient } from "expo-linear-gradient";
+import { useAppTheme } from "../context/ThemeContext";
 
 export type QuoteData = {
   text: string;
@@ -23,13 +24,12 @@ type Props = {
   mood: string;
 };
 
-
 export default function QuoteCard({
   quote,
   background,
   accentColor,
 }: Props) {
-    console.log('Rendering QuoteCard with accentColor:', accentColor, 'and quote:', quote);
+  const { colors, isDark } = useAppTheme();
   return (
     <ImageBackground
       source={background}
@@ -37,107 +37,78 @@ export default function QuoteCard({
       imageStyle={styles.backgroundImage}
       style={styles.container}
     >
-      {/* Dark Overlay */}
+      {/* Dark scrim overlay (slightly lighter on light mode for visibility) */}
+      <LinearGradient
+        colors={[
+          isDark ? "rgba(0,0,0,0.15)" : "rgba(0,0,0,0.05)",
+          isDark ? "rgba(0,0,0,0.55)" : "rgba(0,0,0,0.40)"
+        ]}
+        style={StyleSheet.absoluteFill}
+      />
 
-      <View style={styles.overlay} />
-
-      {/* Blur Glass */}
-
+      {/* Frosted glass card */}
       <BlurView
-        intensity={45}
-        tint="dark"
-        style={styles.blurCard}
+        intensity={colors.blurIntensity}
+        tint={colors.blurTint}
+        style={[
+          styles.blurCard,
+          { borderColor: isDark ? "rgba(255,255,255,0.14)" : "rgba(0,0,0,0.08)" }
+        ]}
       >
         <LinearGradient
-          colors={[
-            "rgba(255,255,255,0.08)",
-            "rgba(255,255,255,0.02)",
-          ]}
+          colors={
+            isDark
+              ? ["rgba(255,255,255,0.10)", "rgba(255,255,255,0.03)"]
+              : ["rgba(255,255,255,0.60)", "rgba(255,255,255,0.30)"]
+          }
           style={styles.gradient}
         >
-          {/* Decorative Top */}
 
+          {/* Top decoration */}
           <View style={styles.topDecoration}>
-            <View
-              style={[
-                styles.line,
-                {
-                  backgroundColor: accentColor,
-                },
-              ]}
-            />
-
-            <Text style={styles.logo}>
+            <View style={[styles.line, { backgroundColor: accentColor }]} />
+            <Text style={[styles.logo, { color: isDark ? "rgba(255,255,255,0.75)" : "rgba(0,0,0,0.65)" }]}>
               MoodQuote
             </Text>
-
-            <View
-              style={[
-                styles.line,
-                {
-                  backgroundColor: accentColor,
-                },
-              ]}
-            />
+            <View style={[styles.line, { backgroundColor: accentColor }]} />
           </View>
 
-          {/* Quote */}
-
+          {/* Quote body */}
           <View style={styles.quoteSection}>
-            <Text
-              style={[
-                styles.quoteMark,
-                {
-                  color: accentColor,
-                },
-              ]}
-            >
-              ❝
-            </Text>
+            <Text style={[styles.quoteMark, { color: accentColor }]}>❝</Text>
 
-            <Text style={styles.quote}>
+            <Text style={[styles.quote, { color: isDark ? "#FFFFFF" : "#0D0F1A" }]} numberOfLines={8}>
               {quote.text}
             </Text>
 
-            <Text
-              style={[
-                styles.quoteMarkBottom,
-                {
-                  color: accentColor,
-                },
-              ]}
-            >
-              ❞
-            </Text>
+            <Text style={[styles.quoteMarkBottom, { color: accentColor }]}>❞</Text>
           </View>
 
           {/* Divider */}
+          <View style={[styles.divider, { backgroundColor: isDark ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.08)" }]} />
 
-          <View style={styles.divider} />
-
-          {/* Author */}
-
+          {/* Author chip */}
           <View style={styles.authorContainer}>
-            <Text style={styles.author}>
-              {quote.author}
-            </Text>
-
-            <Text style={styles.source}>
-              {quote.source}
-            </Text>
+            <View
+              style={[
+                styles.authorChip,
+                {
+                  borderColor: `${accentColor}55`,
+                  backgroundColor: isDark ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.50)",
+                }
+              ]}
+            >
+              <Text style={[styles.author, { color: isDark ? "#FFFFFF" : "#0D0F1A" }]}>
+                {quote.author}
+              </Text>
+            </View>
+            {!!quote.source && (
+              <Text style={[styles.source, { color: isDark ? "rgba(255,255,255,0.60)" : "rgba(0,0,0,0.50)" }]}>
+                {quote.source}
+              </Text>
+            )}
           </View>
 
-          {/* Footer */}
-
-          <View style={styles.footer}>
-            <Text style={styles.footerTitle}>
-              Created with MoodQuote
-            </Text>
-
-            <Text style={styles.footerSubtitle}>
-              Daily inspiration • Share kindness
-            </Text>
-          </View>
         </LinearGradient>
       </BlurView>
     </ImageBackground>
@@ -147,132 +118,122 @@ export default function QuoteCard({
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    aspectRatio: 9 / 16,
-    borderRadius: 32,
+    aspectRatio: 4 / 5,
+    borderRadius: 28,
     overflow: "hidden",
     justifyContent: "center",
     shadowColor: "#000",
-    shadowOpacity: 0.18,
-    shadowRadius: 20,
-    shadowOffset: {
-      width: 0,
-      height: 10,
-    },
-    elevation: 8,
+    shadowOpacity: 0.4,
+    shadowRadius: 28,
+    shadowOffset: { width: 0, height: 14 },
+    elevation: 12,
   },
 
   backgroundImage: {
-    borderRadius: 32,
+    borderRadius: 28,
   },
 
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.28)",
+  blurCard: {
+    flex: 1,
+    margin: 16,
+    borderRadius: 22,
+    overflow: "hidden",
+    borderWidth: 1,
   },
-
-blurCard: {
-  flex: 1,
-  margin: 20,
-  borderRadius: 28,
-  overflow: "hidden",
-},
 
   gradient: {
     flex: 1,
-    minHeight: 580,
-    paddingHorizontal: 26,
-    paddingVertical: 30,
+    paddingHorizontal: 22,
+    paddingVertical: 24,
     justifyContent: "space-between",
   },
 
   topDecoration: {
     flexDirection: "row",
     alignItems: "center",
+    marginBottom: 4,
   },
 
   line: {
     flex: 1,
-    height: 2,
+    height: 1.5,
     borderRadius: 1,
-    opacity: 0.7,
+    opacity: 0.65,
   },
 
   logo: {
-    marginHorizontal: 14,
-    color: "#FFFFFF",
+    marginHorizontal: 12,
+    color: "rgba(255,255,255,0.75)",
     fontWeight: "700",
-    letterSpacing: 1,
-    fontSize: 14,
+    letterSpacing: 1.2,
+    fontSize: 11,
+    textTransform: "uppercase",
   },
 
   quoteSection: {
     flex: 1,
     justifyContent: "center",
+    paddingVertical: 8,
   },
 
   quoteMark: {
-    fontSize: 76,
-    opacity: 0.85,
-    marginBottom: -18,
+    fontSize: 54,
+    opacity: 0.9,
+    marginBottom: -12,
+    lineHeight: 60,
   },
 
   quote: {
-    fontSize: 31,
-    lineHeight: 46,
+    fontSize: 22,
+    lineHeight: 33,
     color: "#FFFFFF",
     fontWeight: "700",
     textAlign: "center",
-    letterSpacing: 0.3,
-    textShadowColor: "rgba(0,0,0,.35)",
-    textShadowRadius: 8,
+    letterSpacing: 0.2,
+    textShadowColor: "rgba(0,0,0,0.4)",
+    textShadowRadius: 6,
+    textShadowOffset: { width: 0, height: 2 },
   },
 
   quoteMarkBottom: {
-    fontSize: 76,
-    opacity: 0.85,
+    fontSize: 54,
+    opacity: 0.9,
     alignSelf: "flex-end",
-    marginTop: -8,
+    marginTop: -6,
+    lineHeight: 60,
   },
 
   divider: {
     height: 1,
-    backgroundColor: "rgba(255,255,255,.22)",
-    marginVertical: 20,
+    backgroundColor: "rgba(255,255,255,0.15)",
+    marginVertical: 16,
   },
 
   authorContainer: {
     alignItems: "center",
+    gap: 8,
+  },
+
+  authorChip: {
+    paddingHorizontal: 18,
+    paddingVertical: 7,
+    borderRadius: 999,
+    borderWidth: 1,
+    backgroundColor: "rgba(255,255,255,0.08)",
   },
 
   author: {
-    fontSize: 22,
+    fontSize: 15,
     fontWeight: "700",
     color: "#FFFFFF",
     textAlign: "center",
+    letterSpacing: 0.3,
   },
 
   source: {
-    marginTop: 8,
-    color: "rgba(255,255,255,.78)",
-    fontSize: 15,
+    color: "rgba(255,255,255,0.60)",
+    fontSize: 12,
     textAlign: "center",
     fontStyle: "italic",
-  },
-
-  footer: {
-    alignItems: "center",
-    marginTop: 10,
-  },
-
-  footerTitle: {
-    color: "#FFFFFF",
-    fontSize: 15,
-    fontWeight: "700",
-  },
-
-  footerSubtitle: {
-    marginTop: 4,
-    color: "rgba(255,255,255,.72)",
-    fontSize: 12,
   },
 });
