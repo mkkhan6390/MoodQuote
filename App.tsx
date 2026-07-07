@@ -198,7 +198,7 @@ function AppShell() {
   };
 
   const refreshQuote = () => {
-    if (quotes.length <= 1) return;
+    if (quotes?.length <= 1) return;
 
     let nextIndex = getRandomIndex(quotes.length);
 
@@ -412,7 +412,7 @@ function AppShell() {
             panelStyle
           ]}
         >
-
+          console.log("Category: ",quoteData)
           {step === 'category' && (
             <PickerPage
               color={themeColor}

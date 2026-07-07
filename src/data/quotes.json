@@ -1,188 +1,4837 @@
 {
-  "moods": ["happy", "sad", "lost", "lonely", "energetic", "confused"],
+  "moods": [
+    "happy",
+    "sad",
+    "lost",
+    "lonely",
+    "energetic",
+    "confused"
+  ],
   "categories": [
-   {
-  "id": "religion",
-  "name": "Religion",
-  "accent": "#4F46E5",
-  "icon": "book-outline",
-  "subcategories": [
     {
-      "id": "islam",
-      "name": "Islam",
-      "quotes": {
-        "happy": [
-          {
-            "text": "Indeed, with hardship comes ease.",
-            "author": "Quran",
-            "source": "Surah Ash-Sharh (94:5)",
-            "type": "verified"
-          },
-          {
-            "text": "So remember Me; I will remember you.",
-            "author": "Quran",
-            "source": "Surah Al-Baqarah (2:152)",
-            "type": "verified"
+      "id": "religion",
+      "name": "Religion",
+      "accent": "#4F46E5",
+      "icon": "book-outline",
+      "subcategories": [
+        {
+          "id": "islam",
+          "name": "Islam",
+          "quotes": {
+            "Happy": [
+              {
+                "text": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:152)",
+                "type": "verified"
+              },
+              {
+                "text": "If you are grateful, I will surely increase you.",
+                "author": "Quran",
+                "source": "Surah Ibrahim (14:7)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:5)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:6)",
+                "type": "verified"
+              },
+              {
+                "text": "Say, 'In the bounty of Allah and in His mercy—in that let them rejoice.'",
+                "author": "Quran",
+                "source": "Surah Yunus (10:58)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relies upon Allah, then He is sufficient for him.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is with the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:153)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the allies of Allah—there will be no fear concerning them, nor will they grieve.",
+                "author": "Quran",
+                "source": "Surah Yunus (10:62)",
+                "type": "verified"
+              },
+              {
+                "text": "Do not despair of the mercy of Allah.",
+                "author": "Quran",
+                "source": "Surah Az-Zumar (39:53)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah does not burden a soul beyond what it can bear.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:286)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever does righteousness, whether male or female, while being a believer—We will surely grant them a good life.",
+                "author": "Quran",
+                "source": "Surah An-Nahl (16:97)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the mercy of Allah is near to the doers of good.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:56)",
+                "type": "verified"
+              },
+              {
+                "text": "And your Lord is going to give you, and you will be satisfied.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:5)",
+                "type": "verified"
+              },
+              {
+                "text": "He found you lost and guided you.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:7)",
+                "type": "verified"
+              },
+              {
+                "text": "So as for the favor of your Lord, proclaim it.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:11)",
+                "type": "verified"
+              },
+              {
+                "text": "The believers are but brothers.",
+                "author": "Quran",
+                "source": "Surah Al-Hujurat (49:10)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever fears Allah—He will make for him a way out and provide for him from where he does not expect.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:2–3)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, my Lord is near and responsive.",
+                "author": "Quran",
+                "source": "Surah Hud (11:61)",
+                "type": "verified"
+              },
+              {
+                "text": "Call upon Me; I will respond to you.",
+                "author": "Quran",
+                "source": "Surah Ghafir (40:60)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who rely upon Him.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:159)",
+                "type": "verified"
+              },
+              {
+                "text": "The strong believer is better and more beloved to Allah than the weak believer, though there is good in both.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2664",
+                "type": "verified"
+              },
+              {
+                "text": "None of you truly believes until he loves for his brother what he loves for himself.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 13; Sahih Muslim 45",
+                "type": "verified"
+              },
+              {
+                "text": "The best of people are those who are most beneficial to people.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Al-Mu'jam al-Awsat (Hasan)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is gentle and loves gentleness in all matters.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6927; Sahih Muslim 2165",
+                "type": "verified"
+              },
+              {
+                "text": "Smile at your brother, for it is charity.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1956",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved deeds to Allah are those done regularly, even if they are few.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6465; Sahih Muslim 783",
+                "type": "verified"
+              },
+              {
+                "text": "The merciful are shown mercy by the Most Merciful. Be merciful to those on earth, and the One above the heavens will have mercy upon you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1924",
+                "type": "verified"
+              },
+              {
+                "text": "Purity is half of faith.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 223",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever believes in Allah and the Last Day should speak good or remain silent.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6018; Sahih Muslim 47",
+                "type": "verified"
+              },
+              {
+                "text": "The nearest of people to me on the Day of Resurrection will be those with the best character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2018",
+                "type": "verified"
+              }
+            ],
+            "Sad": [
+              {
+                "text": "And We will surely test you with something of fear and hunger and a loss of wealth and lives and fruits, but give good tidings to the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:155)",
+                "type": "verified"
+              },
+              {
+                "text": "Those who, when disaster strikes them, say, 'Indeed we belong to Allah, and indeed to Him we will return.'",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:156)",
+                "type": "verified"
+              },
+              {
+                "text": "Those are the ones upon whom are blessings from their Lord and mercy. And it is those who are rightly guided.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:157)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:5)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:6)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah does not burden a soul beyond what it can bear.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:286)",
+                "type": "verified"
+              },
+              {
+                "text": "Do not despair of the mercy of Allah. Indeed, Allah forgives all sins.",
+                "author": "Quran",
+                "source": "Surah Az-Zumar (39:53)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is with the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:153)",
+                "type": "verified"
+              },
+              {
+                "text": "And seek help through patience and prayer.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:45)",
+                "type": "verified"
+              },
+              {
+                "text": "And seek help through patience and prayer. Indeed, Allah is with the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:153)",
+                "type": "verified"
+              },
+              {
+                "text": "My mercy encompasses all things.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:156)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, my Lord is near and responsive.",
+                "author": "Quran",
+                "source": "Surah Hud (11:61)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever puts his trust in Allah, then He is sufficient for him.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "And He found you lost and guided you.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:7)",
+                "type": "verified"
+              },
+              {
+                "text": "And your Lord is going to give you, and you will be satisfied.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:5)",
+                "type": "verified"
+              },
+              {
+                "text": "Your Lord has not forsaken you, nor has He become displeased.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:3)",
+                "type": "verified"
+              },
+              {
+                "text": "Call upon Me; I will respond to you.",
+                "author": "Quran",
+                "source": "Surah Ghafir (40:60)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who are constantly repentant.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:222)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the friends of Allah—there will be no fear concerning them, nor will they grieve.",
+                "author": "Quran",
+                "source": "Surah Yunus (10:62)",
+                "type": "verified"
+              },
+              {
+                "text": "So be patient. Indeed, the promise of Allah is truth.",
+                "author": "Quran",
+                "source": "Surah Ar-Rum (30:60)",
+                "type": "verified"
+              },
+              {
+                "text": "No fatigue, illness, anxiety, sorrow, harm, or distress befalls a Muslim—even the prick of a thorn—except that Allah expiates some of his sins because of it.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 5641–5642; Sahih Muslim 2573",
+                "type": "verified"
+              },
+              {
+                "text": "How wonderful is the affair of the believer. If something good happens to him, he is grateful; if hardship befalls him, he is patient, and that is good for him.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2999",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever remains patient, Allah will grant him patience. No one is given a gift better and more comprehensive than patience.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 1469; Sahih Muslim 1053",
+                "type": "verified"
+              },
+              {
+                "text": "Allah does not look at your appearance or wealth, but He looks at your hearts and your deeds.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2564",
+                "type": "verified"
+              },
+              {
+                "text": "The people who are tested most severely are the Prophets, then those nearest to them in righteousness.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2398",
+                "type": "verified"
+              },
+              {
+                "text": "When Allah intends good for someone, He afflicts him with trials.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 5645",
+                "type": "verified"
+              },
+              {
+                "text": "The supplication of the distressed is answered when he calls upon Allah.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Meaning supported by authentic narrations on accepted supplication",
+                "type": "verified"
+              },
+              {
+                "text": "Be mindful of Allah, and you will find Him before you. Know that victory comes with patience, relief with affliction, and ease with hardship.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2516",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved deeds to Allah are those done consistently, even if they are few.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6465; Sahih Muslim 783",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relieves a believer of a hardship in this world, Allah will relieve him of a hardship on the Day of Resurrection.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              }
+            ],
+            "Lost": [
+              {
+                "text": "Guide us to the straight path.",
+                "author": "Quran",
+                "source": "Surah Al-Fatihah (1:6)",
+                "type": "verified"
+              },
+              {
+                "text": "This is the Book about which there is no doubt, a guidance for those conscious of Allah.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:2)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is the ally of those who believe. He brings them out from darkness into the light.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:257)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, this Qur'an guides to that which is most upright.",
+                "author": "Quran",
+                "source": "Surah Al-Isra (17:9)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relies upon Allah, then He is sufficient for him.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "And He found you lost and guided you.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:7)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is with those who fear Him and those who are doers of good.",
+                "author": "Quran",
+                "source": "Surah An-Nahl (16:128)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, my Lord is near and responsive.",
+                "author": "Quran",
+                "source": "Surah Hud (11:61)",
+                "type": "verified"
+              },
+              {
+                "text": "Call upon Me; I will respond to you.",
+                "author": "Quran",
+                "source": "Surah Ghafir (40:60)",
+                "type": "verified"
+              },
+              {
+                "text": "And whoever fears Allah—He will make for him a way out.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:2)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah commands justice, excellence, and giving to relatives.",
+                "author": "Quran",
+                "source": "Surah An-Nahl (16:90)",
+                "type": "verified"
+              },
+              {
+                "text": "And seek help through patience and prayer.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:45)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah does not burden a soul beyond what it can bear.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:286)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the allies of Allah—there will be no fear concerning them, nor will they grieve.",
+                "author": "Quran",
+                "source": "Surah Yunus (10:62)",
+                "type": "verified"
+              },
+              {
+                "text": "Say, 'My Lord, increase me in knowledge.'",
+                "author": "Quran",
+                "source": "Surah Ta-Ha (20:114)",
+                "type": "verified"
+              },
+              {
+                "text": "The best among you are those who learn the Qur'an and teach it.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 5027",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever travels a path seeking knowledge, Allah will make easy for him a path to Paradise.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              },
+              {
+                "text": "Be mindful of Allah, and He will protect you. Be mindful of Allah, and you will find Him before you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2516",
+                "type": "verified"
+              },
+              {
+                "text": "Tie your camel and then put your trust in Allah.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2517",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved places to Allah are the mosques.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 671",
+                "type": "verified"
+              },
+              {
+                "text": "Religion is sincere advice.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 55",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever follows a path in search of knowledge, Allah will make his path to Paradise easy.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              },
+              {
+                "text": "The believer who mixes with people and is patient with their harm is better than the one who does not mix with them.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Ibn Majah 4032",
+                "type": "verified"
+              },
+              {
+                "text": "Ask Allah for guidance and soundness.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2725",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved speech to Allah is: 'SubhanAllahi wa bihamdihi.'",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2694",
+                "type": "verified"
+              },
+              {
+                "text": "Actions are judged by intentions.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 1; Sahih Muslim 1907",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever seeks the pleasure of Allah, Allah will suffice him against the people.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2414",
+                "type": "verified"
+              },
+              {
+                "text": "The wise person is the one who holds himself accountable and works for what comes after death.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2459",
+                "type": "verified"
+              },
+              {
+                "text": "Consult your heart, even if people continue giving you their opinions.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Musnad Ahmad 17399 (Hasan)",
+                "type": "verified"
+              },
+              {
+                "text": "O Allah, I ask You for guidance, piety, chastity, and self-sufficiency.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2721",
+                "type": "verified"
+              }
+            ],
+            "Lonely": [
+              {
+                "text": "And when My servants ask you concerning Me—indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:186)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is with the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:153)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, I am with you both; I hear and I see.",
+                "author": "Quran",
+                "source": "Surah Ta-Ha (20:46)",
+                "type": "verified"
+              },
+              {
+                "text": "Do not grieve; indeed Allah is with us.",
+                "author": "Quran",
+                "source": "Surah At-Tawbah (9:40)",
+                "type": "verified"
+              },
+              {
+                "text": "We are closer to him than his jugular vein.",
+                "author": "Quran",
+                "source": "Surah Qaf (50:16)",
+                "type": "verified"
+              },
+              {
+                "text": "And He is with you wherever you are.",
+                "author": "Quran",
+                "source": "Surah Al-Hadid (57:4)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, in the remembrance of Allah do hearts find rest.",
+                "author": "Quran",
+                "source": "Surah Ar-Ra'd (13:28)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is the ally of those who believe.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:257)",
+                "type": "verified"
+              },
+              {
+                "text": "The believers are but brothers.",
+                "author": "Quran",
+                "source": "Surah Al-Hujurat (49:10)",
+                "type": "verified"
+              },
+              {
+                "text": "My mercy encompasses all things.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:156)",
+                "type": "verified"
+              },
+              {
+                "text": "Your Lord has not forsaken you, nor has He become displeased.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:3)",
+                "type": "verified"
+              },
+              {
+                "text": "And your Lord is going to give you, and you will be satisfied.",
+                "author": "Quran",
+                "source": "Surah Ad-Duha (93:5)",
+                "type": "verified"
+              },
+              {
+                "text": "Call upon Me; I will respond to you.",
+                "author": "Quran",
+                "source": "Surah Ghafir (40:60)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the mercy of Allah is near to the doers of good.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:56)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relies upon Allah, then He is sufficient for him.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "The example of the believers in their mutual love, mercy and compassion is like one body; if one part suffers, the whole body responds with wakefulness and fever.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6011; Sahih Muslim 2586",
+                "type": "verified"
+              },
+              {
+                "text": "A believer to another believer is like a building whose different parts support each other.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 481; Sahih Muslim 2585",
+                "type": "verified"
+              },
+              {
+                "text": "Allah continues to help the servant as long as the servant helps his brother.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relieves a believer of a hardship in this world, Allah will relieve him of a hardship on the Day of Resurrection.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              },
+              {
+                "text": "None of you truly believes until he loves for his brother what he loves for himself.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 13; Sahih Muslim 45",
+                "type": "verified"
+              },
+              {
+                "text": "The merciful are shown mercy by the Most Merciful. Be merciful to those on earth, and the One above the heavens will have mercy upon you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1924",
+                "type": "verified"
+              },
+              {
+                "text": "The Muslim is the brother of another Muslim. He neither oppresses him nor abandons him.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 2442; Sahih Muslim 2580",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved places to Allah are the mosques.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 671",
+                "type": "verified"
+              },
+              {
+                "text": "The closest people to Allah on the Day of Resurrection are those with the best character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2018",
+                "type": "verified"
+              },
+              {
+                "text": "Exchange gifts, for they increase love between you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Al-Adab Al-Mufrad 594 (Hasan)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever visits a sick person or visits his brother for the sake of Allah, a caller announces: 'May you be blessed, may your walking be blessed, and may you occupy a lofty place in Paradise.'",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2008",
+                "type": "verified"
+              },
+              {
+                "text": "The believer who mixes with people and patiently bears their harm is better than the believer who does not mix with people.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Ibn Majah 4032",
+                "type": "verified"
+              },
+              {
+                "text": "The best of companions in the sight of Allah is the one who is best to his companion.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1944",
+                "type": "verified"
+              },
+              {
+                "text": "Spread peace among yourselves.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 54",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever believes in Allah and the Last Day should maintain the ties of kinship.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6138; Sahih Muslim 47",
+                "type": "verified"
+              }
+            ],
+            "Angry": [
+              {
+                "text": "Those who spend in prosperity and adversity, who restrain anger and pardon people—and Allah loves the doers of good.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:134)",
+                "type": "verified"
+              },
+              {
+                "text": "Repel evil with that which is better.",
+                "author": "Quran",
+                "source": "Surah Fussilat (41:34)",
+                "type": "verified"
+              },
+              {
+                "text": "The good deed and the evil deed are not equal. Repel evil with that which is better, and the one between whom and you was enmity will become as though he were a devoted friend.",
+                "author": "Quran",
+                "source": "Surah Fussilat (41:34)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah commands justice, excellence, and giving to relatives.",
+                "author": "Quran",
+                "source": "Surah An-Nahl (16:90)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is with the patient.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:153)",
+                "type": "verified"
+              },
+              {
+                "text": "And be patient. Indeed, Allah does not allow the reward of the doers of good to be lost.",
+                "author": "Quran",
+                "source": "Surah Hud (11:115)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who act justly.",
+                "author": "Quran",
+                "source": "Surah Al-Ma'idah (5:42)",
+                "type": "verified"
+              },
+              {
+                "text": "The servants of the Most Merciful are those who walk upon the earth humbly, and when the ignorant address them harshly, they say words of peace.",
+                "author": "Quran",
+                "source": "Surah Al-Furqan (25:63)",
+                "type": "verified"
+              },
+              {
+                "text": "Speak kindly to people.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:83)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who rely upon Him.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:159)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever is patient and forgives—indeed, that is among the matters requiring determination.",
+                "author": "Quran",
+                "source": "Surah Ash-Shura (42:43)",
+                "type": "verified"
+              },
+              {
+                "text": "The recompense of an evil is an evil like it, but whoever pardons and makes reconciliation, his reward is with Allah.",
+                "author": "Quran",
+                "source": "Surah Ash-Shura (42:40)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah does not like the wrongdoing people.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:57)",
+                "type": "verified"
+              },
+              {
+                "text": "And lower your wing to the believers.",
+                "author": "Quran",
+                "source": "Surah Al-Hijr (15:88)",
+                "type": "verified"
+              },
+              {
+                "text": "The believers are but brothers, so make peace between your brothers.",
+                "author": "Quran",
+                "source": "Surah Al-Hujurat (49:10)",
+                "type": "verified"
+              },
+              {
+                "text": "The strong man is not the one who can overpower others. Rather, the strong man is the one who controls himself when angry.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6114; Sahih Muslim 2609",
+                "type": "verified"
+              },
+              {
+                "text": "Do not become angry.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6116",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever restrains his anger while being able to act upon it, Allah will call him before all creation on the Day of Resurrection.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2021",
+                "type": "verified"
+              },
+              {
+                "text": "The merciful are shown mercy by the Most Merciful. Show mercy to those on the earth, and the One above the heavens will show mercy to you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1924",
+                "type": "verified"
+              },
+              {
+                "text": "The believer is not one who insults others, curses others, speaks indecently, or is foul-mouthed.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1977",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever believes in Allah and the Last Day should speak good or remain silent.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6018; Sahih Muslim 47",
+                "type": "verified"
+              },
+              {
+                "text": "The best of you are those with the best character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 3559",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is gentle and loves gentleness in all matters.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6927; Sahih Muslim 2165",
+                "type": "verified"
+              },
+              {
+                "text": "Gentleness is not found in anything except that it beautifies it, and it is not removed from anything except that it makes it defective.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2594",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved of you to me and the nearest to me on the Day of Resurrection are those with the best manners.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2018",
+                "type": "verified"
+              },
+              {
+                "text": "Do not hate one another, do not envy one another, do not turn away from one another. Be servants of Allah as brothers.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2559",
+                "type": "verified"
+              },
+              {
+                "text": "A Muslim is the brother of another Muslim. He neither oppresses him nor abandons him.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 2442; Sahih Muslim 2580",
+                "type": "verified"
+              },
+              {
+                "text": "When one of you becomes angry while standing, let him sit down. If the anger leaves him, well and good; otherwise, let him lie down.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Abi Dawud 4782",
+                "type": "verified"
+              },
+              {
+                "text": "Anger is from Satan. If one of you becomes angry, let him perform ablution (wudu).",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Abi Dawud 4784",
+                "type": "verified"
+              },
+              {
+                "text": "The most perfect of the believers in faith are those with the best character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1162",
+                "type": "verified"
+              }
+            ],
+            "Afraid": [
+              {
+                "text": "Do not fear; indeed, I am with you both. I hear and I see.",
+                "author": "Quran",
+                "source": "Surah Ta-Ha (20:46)",
+                "type": "verified"
+              },
+              {
+                "text": "Do not grieve; indeed Allah is with us.",
+                "author": "Quran",
+                "source": "Surah At-Tawbah (9:40)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the allies of Allah—there will be no fear concerning them, nor will they grieve.",
+                "author": "Quran",
+                "source": "Surah Yunus (10:62)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relies upon Allah—then He is sufficient for him.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is sufficient for us, and He is the best Disposer of affairs.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:173)",
+                "type": "verified"
+              },
+              {
+                "text": "It is only Satan who frightens his supporters. So do not fear them, but fear Me, if you are believers.",
+                "author": "Quran",
+                "source": "Surah Aal 'Imran (3:175)",
+                "type": "verified"
+              },
+              {
+                "text": "And whoever fears Allah—He will make for him a way out.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:2)",
+                "type": "verified"
+              },
+              {
+                "text": "And He will provide for him from where he does not expect.",
+                "author": "Quran",
+                "source": "Surah At-Talaq (65:3)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah defends those who believe.",
+                "author": "Quran",
+                "source": "Surah Al-Hajj (22:38)",
+                "type": "verified"
+              },
+              {
+                "text": "Call upon Me; I will respond to you.",
+                "author": "Quran",
+                "source": "Surah Ghafir (40:60)",
+                "type": "verified"
+              },
+              {
+                "text": "And when My servants ask you concerning Me—indeed I am near.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:186)",
+                "type": "verified"
+              },
+              {
+                "text": "Allah does not burden a soul beyond what it can bear.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:286)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:5)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, with hardship comes ease.",
+                "author": "Quran",
+                "source": "Surah Ash-Sharh (94:6)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, my Lord is near and responsive.",
+                "author": "Quran",
+                "source": "Surah Hud (11:61)",
+                "type": "verified"
+              },
+              {
+                "text": "Be mindful of Allah, and He will protect you. Be mindful of Allah, and you will find Him before you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2516",
+                "type": "verified"
+              },
+              {
+                "text": "Know that if the whole nation gathered together to benefit you, they would not benefit you except with what Allah has already written for you. And if they gathered to harm you, they would not harm you except with what Allah has already written against you.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2516",
+                "type": "verified"
+              },
+              {
+                "text": "Be eager for what benefits you, seek help from Allah, and do not lose heart.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2664",
+                "type": "verified"
+              },
+              {
+                "text": "The strong believer is better and more beloved to Allah than the weak believer, though there is good in both.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2664",
+                "type": "verified"
+              },
+              {
+                "text": "Tie your camel and then put your trust in Allah.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2517",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever says in the morning and evening: 'Hasbiya Allahu la ilaha illa Huwa...' seven times, Allah will suffice him in what concerns him.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Abi Dawud 5081",
+                "type": "verified"
+              },
+              {
+                "text": "Ask Allah for well-being in this world and the Hereafter.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 3514",
+                "type": "verified"
+              },
+              {
+                "text": "O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts, and being overpowered by men.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6369",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever relieves a believer of a hardship in this world, Allah will relieve him of a hardship on the Day of Resurrection.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2699",
+                "type": "verified"
+              },
+              {
+                "text": "No fatigue, illness, anxiety, sorrow, harm, distress, or even the prick of a thorn befalls a Muslim except that Allah expiates some of his sins because of it.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 5641–5642; Sahih Muslim 2573",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever remains patient, Allah will grant him patience.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 1469; Sahih Muslim 1053",
+                "type": "verified"
+              },
+              {
+                "text": "The most beloved words to Allah are four: SubhanAllah, Alhamdulillah, La ilaha illallah, and Allahu Akbar.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2137",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is more merciful to His servants than a mother is to her child.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 5999; Sahih Muslim 2754",
+                "type": "verified"
+              },
+              {
+                "text": "When you ask, ask Allah; when you seek help, seek help from Allah.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2516",
+                "type": "verified"
+              },
+              {
+                "text": "The best provision is consciousness of Allah (taqwa).",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:197)",
+                "type": "verified"
+              }
+            ],
+            "Regretful": [
+              {
+                "text": "Say, 'O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins.'",
+                "author": "Quran",
+                "source": "Surah Az-Zumar (39:53)",
+                "type": "verified"
+              },
+              {
+                "text": "And turn to Allah in repentance, all of you, O believers, that you might succeed.",
+                "author": "Quran",
+                "source": "Surah An-Nur (24:31)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who are constantly repentant and loves those who purify themselves.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:222)",
+                "type": "verified"
+              },
+              {
+                "text": "Except for those who repent, believe, and do righteous deeds. For them Allah will replace their evil deeds with good.",
+                "author": "Quran",
+                "source": "Surah Al-Furqan (25:70)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever does wrong or wrongs himself and then seeks Allah's forgiveness will find Allah Forgiving and Merciful.",
+                "author": "Quran",
+                "source": "Surah An-Nisa (4:110)",
+                "type": "verified"
+              },
+              {
+                "text": "Seek forgiveness of your Lord and then repent to Him. Indeed, my Lord is Merciful and Loving.",
+                "author": "Quran",
+                "source": "Surah Hud (11:90)",
+                "type": "verified"
+              },
+              {
+                "text": "And whoever repents and does righteousness has truly turned to Allah in sincere repentance.",
+                "author": "Quran",
+                "source": "Surah Al-Furqan (25:71)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, the mercy of Allah is near to the doers of good.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:56)",
+                "type": "verified"
+              },
+              {
+                "text": "My mercy encompasses all things.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:156)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah accepts the repentance of those who do evil in ignorance and then repent soon after.",
+                "author": "Quran",
+                "source": "Surah An-Nisa (4:17)",
+                "type": "verified"
+              },
+              {
+                "text": "Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver.",
+                "author": "Quran",
+                "source": "Surah Nuh (71:10)",
+                "type": "verified"
+              },
+              {
+                "text": "He is the One who accepts repentance from His servants and pardons misdeeds.",
+                "author": "Quran",
+                "source": "Surah Ash-Shura (42:25)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah is Forgiving and Merciful.",
+                "author": "Quran",
+                "source": "Repeated throughout the Quran",
+                "type": "verified"
+              },
+              {
+                "text": "Our Lord, we have wronged ourselves. If You do not forgive us and have mercy upon us, we will surely be among the losers.",
+                "author": "Quran",
+                "source": "Surah Al-A'raf (7:23)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah loves those who constantly repent.",
+                "author": "Quran",
+                "source": "Surah Al-Baqarah (2:222)",
+                "type": "verified"
+              },
+              {
+                "text": "Every son of Adam sins, and the best of those who sin are those who repent.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 2499",
+                "type": "verified"
+              },
+              {
+                "text": "Allah is more pleased with the repentance of His servant than one who finds his lost camel in the desert.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6309; Sahih Muslim 2747",
+                "type": "verified"
+              },
+              {
+                "text": "By Allah, I seek Allah's forgiveness and repent to Him more than seventy times a day.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 6307",
+                "type": "verified"
+              },
+              {
+                "text": "Allah stretches out His Hand during the night to accept the repentance of the one who sinned during the day, and during the day to accept the repentance of the one who sinned during the night.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2759",
+                "type": "verified"
+              },
+              {
+                "text": "The one who repents from sin is like one who never sinned.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sunan Ibn Majah 4250 (graded Hasan by many scholars)",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever says 'Astaghfirullah wa atubu ilayh' sincerely, Allah will forgive him.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Based on authentic narrations encouraging frequent istighfar",
+                "type": "verified"
+              },
+              {
+                "text": "Our Lord descends every night to the lowest heaven and says: 'Who is seeking My forgiveness so that I may forgive him?'",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 1145; Sahih Muslim 758",
+                "type": "verified"
+              },
+              {
+                "text": "Allah says: 'O son of Adam, were your sins to reach the clouds of the sky and then you sought My forgiveness, I would forgive you.'",
+                "author": "Allah (Hadith Qudsi)",
+                "source": "Jami' at-Tirmidhi 3540",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever repents before the sun rises from the west, Allah will accept his repentance.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih Muslim 2703",
+                "type": "verified"
+              },
+              {
+                "text": "The best among you are those who have the best character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Sahih al-Bukhari 3559",
+                "type": "verified"
+              },
+              {
+                "text": "Follow a bad deed with a good one; it will erase it.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1987",
+                "type": "verified"
+              },
+              {
+                "text": "Fear Allah wherever you are, follow a bad deed with a good deed to erase it, and treat people with good character.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 1987",
+                "type": "verified"
+              },
+              {
+                "text": "Whoever seeks forgiveness for the believing men and women, Allah will record for him a good deed for every believing man and woman.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Al-Mu'jam al-Kabir (reported; authenticity discussed)",
+                "type": "verified"
+              },
+              {
+                "text": "Indeed, Allah accepts the repentance of a servant so long as the soul has not reached the throat.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Jami' at-Tirmidhi 3537",
+                "type": "verified"
+              },
+              {
+                "text": "The doors of repentance remain open until the sun rises from the west.",
+                "author": "Prophet Muhammad ﷺ",
+                "source": "Meaning supported by Sahih Muslim 2703",
+                "type": "verified"
+              }
+            ]
           }
-        ],
-        "sad": [
-          {
-            "text": "And do not despair of the mercy of Allah.",
-            "author": "Quran",
-            "source": "Surah Az-Zumar (39:53)",
-            "type": "verified"
-          },
-          {
-            "text": "Allah does not burden a soul beyond that it can bear.",
-            "author": "Quran",
-            "source": "Surah Al-Baqarah (2:286)",
-            "type": "verified"
+        },
+        {
+          "id": "christianity",
+          "name": "Christianity",
+          "quotes": {
+            "Happy": [
+              {
+                "text": "Rejoice in the Lord alway: and again I say, Rejoice.",
+                "author": "Bible",
+                "source": "Philippians 4:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "This is the day which the Lord hath made; we will rejoice and be glad in it.",
+                "author": "Bible",
+                "source": "Psalm 118:24 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The joy of the LORD is your strength.",
+                "author": "Bible",
+                "source": "Nehemiah 8:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Rejoice evermore.",
+                "author": "Bible",
+                "source": "1 Thessalonians 5:16 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Give thanks unto the LORD; for he is good: because his mercy endureth for ever.",
+                "author": "Bible",
+                "source": "Psalm 107:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "O taste and see that the LORD is good: blessed is the man that trusteth in him.",
+                "author": "Bible",
+                "source": "Psalm 34:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart.",
+                "author": "Bible",
+                "source": "Psalm 37:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Bless the LORD, O my soul: and all that is within me, bless his holy name.",
+                "author": "Bible",
+                "source": "Psalm 103:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Make a joyful noise unto the LORD, all ye lands.",
+                "author": "Bible",
+                "source": "Psalm 100:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Serve the LORD with gladness: come before his presence with singing.",
+                "author": "Bible",
+                "source": "Psalm 100:2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my shepherd; I shall not want.",
+                "author": "Bible",
+                "source": "Psalm 23:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my light and my salvation; whom shall I fear?",
+                "author": "Bible",
+                "source": "Psalm 27:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be glad in the LORD, and rejoice, ye righteous.",
+                "author": "Bible",
+                "source": "Psalm 32:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The blessing of the LORD, it maketh rich, and he addeth no sorrow with it.",
+                "author": "Bible",
+                "source": "Proverbs 10:22 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A merry heart doeth good like a medicine.",
+                "author": "Bible",
+                "source": "Proverbs 17:22 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Every good gift and every perfect gift is from above.",
+                "author": "Bible",
+                "source": "James 1:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let the peace of God rule in your hearts; and be ye thankful.",
+                "author": "Bible",
+                "source": "Colossians 3:15 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "In every thing give thanks.",
+                "author": "Bible",
+                "source": "1 Thessalonians 5:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith.",
+                "author": "Bible",
+                "source": "Galatians 5:22–23 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The kingdom of God is... righteousness, and peace, and joy in the Holy Ghost.",
+                "author": "Bible",
+                "source": "Romans 14:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Happy is that people, whose God is the LORD.",
+                "author": "Bible",
+                "source": "Psalm 144:15 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Happy is he that hath the God of Jacob for his help.",
+                "author": "Bible",
+                "source": "Psalm 146:5 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "These things have I spoken unto you, that my joy might remain in you, and that your joy might be full.",
+                "author": "Jesus Christ",
+                "source": "John 15:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Ask, and ye shall receive, that your joy may be full.",
+                "author": "Jesus Christ",
+                "source": "John 16:24 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Peace I leave with you, my peace I give unto you.",
+                "author": "Jesus Christ",
+                "source": "John 14:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+                "author": "Jesus Christ",
+                "source": "Matthew 11:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let your light so shine before men.",
+                "author": "Jesus Christ",
+                "source": "Matthew 5:16 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Ye are the light of the world.",
+                "author": "Jesus Christ",
+                "source": "Matthew 5:14 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "With God all things are possible.",
+                "author": "Jesus Christ",
+                "source": "Matthew 19:26 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.",
+                "author": "Jesus Christ",
+                "source": "Luke 12:32 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Sad": [
+              {
+                "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+                "author": "Jesus Christ",
+                "source": "Matthew 11:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Blessed are they that mourn: for they shall be comforted.",
+                "author": "Jesus Christ",
+                "source": "Matthew 5:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.",
+                "author": "Jesus Christ",
+                "source": "John 14:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let not your heart be troubled: ye believe in God, believe also in me.",
+                "author": "Jesus Christ",
+                "source": "John 14:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world.",
+                "author": "Jesus Christ",
+                "source": "John 16:33 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.",
+                "author": "Bible",
+                "source": "Psalm 34:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Cast thy burden upon the LORD, and he shall sustain thee.",
+                "author": "Bible",
+                "source": "Psalm 55:22 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "God is our refuge and strength, a very present help in trouble.",
+                "author": "Bible",
+                "source": "Psalm 46:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be still, and know that I am God.",
+                "author": "Bible",
+                "source": "Psalm 46:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my shepherd; I shall not want.",
+                "author": "Bible",
+                "source": "Psalm 23:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me.",
+                "author": "Bible",
+                "source": "Psalm 23:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "He healeth the broken in heart, and bindeth up their wounds.",
+                "author": "Bible",
+                "source": "Psalm 147:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The eternal God is thy refuge, and underneath are the everlasting arms.",
+                "author": "Bible",
+                "source": "Deuteronomy 33:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God.",
+                "author": "Bible",
+                "source": "Isaiah 41:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "When thou passest through the waters, I will be with thee.",
+                "author": "Bible",
+                "source": "Isaiah 43:2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For I know the thoughts that I think toward you... thoughts of peace, and not of evil, to give you an expected end.",
+                "author": "Bible",
+                "source": "Jeremiah 29:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Weeping may endure for a night, but joy cometh in the morning.",
+                "author": "Bible",
+                "source": "Psalm 30:5 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD also will be a refuge for the oppressed, a refuge in times of trouble.",
+                "author": "Bible",
+                "source": "Psalm 9:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Casting all your care upon him; for he careth for you.",
+                "author": "Bible",
+                "source": "1 Peter 5:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "My grace is sufficient for thee: for my strength is made perfect in weakness.",
+                "author": "Jesus Christ",
+                "source": "2 Corinthians 12:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And we know that all things work together for good to them that love God.",
+                "author": "Bible",
+                "source": "Romans 8:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For I am persuaded, that neither death, nor life... shall be able to separate us from the love of God.",
+                "author": "Bible",
+                "source": "Romans 8:38–39 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
+                "author": "Bible",
+                "source": "Philippians 4:6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
+                "author": "Bible",
+                "source": "Philippians 4:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is good, a strong hold in the day of trouble; and he knoweth them that trust in him.",
+                "author": "Bible",
+                "source": "Nahum 1:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand.",
+                "author": "Bible",
+                "source": "Psalm 37:24 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The righteous cry, and the LORD heareth, and delivereth them out of all their troubles.",
+                "author": "Bible",
+                "source": "Psalm 34:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Blessed be God... the Father of mercies, and the God of all comfort.",
+                "author": "Bible",
+                "source": "2 Corinthians 1:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Who comforteth us in all our tribulation.",
+                "author": "Bible",
+                "source": "2 Corinthians 1:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "I will not leave you comfortless: I will come to you.",
+                "author": "Jesus Christ",
+                "source": "John 14:18 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Lost": [
+              {
+                "text": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.",
+                "author": "Jesus Christ",
+                "source": "John 14:6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+                "author": "Bible",
+                "source": "Proverbs 3:5-6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my shepherd; I shall not want.",
+                "author": "Bible",
+                "source": "Psalm 23:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Thy word is a lamp unto my feet, and a light unto my path.",
+                "author": "Bible",
+                "source": "Psalm 119:105 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The steps of a good man are ordered by the LORD.",
+                "author": "Bible",
+                "source": "Psalm 37:23 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
+                "author": "Bible",
+                "source": "Psalm 37:5 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "I will instruct thee and teach thee in the way which thou shalt go: I will guide thee with mine eye.",
+                "author": "Bible",
+                "source": "Psalm 32:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD shall guide thee continually.",
+                "author": "Bible",
+                "source": "Isaiah 58:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For I know the thoughts that I think toward you... thoughts of peace, and not of evil, to give you an expected end.",
+                "author": "Bible",
+                "source": "Jeremiah 29:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.",
+                "author": "Jesus Christ",
+                "source": "Matthew 6:33 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.",
+                "author": "Jesus Christ",
+                "source": "Matthew 7:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If any of you lack wisdom, let him ask of God... and it shall be given him.",
+                "author": "Bible",
+                "source": "James 1:5 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The fear of the LORD is the beginning of wisdom.",
+                "author": "Bible",
+                "source": "Proverbs 9:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart.",
+                "author": "Bible",
+                "source": "Psalm 37:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Commit thy works unto the LORD, and thy thoughts shall be established.",
+                "author": "Bible",
+                "source": "Proverbs 16:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A man's heart deviseth his way: but the LORD directeth his steps.",
+                "author": "Bible",
+                "source": "Proverbs 16:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For the Son of man is come to seek and to save that which was lost.",
+                "author": "Jesus Christ",
+                "source": "Luke 19:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "I am the good shepherd: the good shepherd giveth his life for the sheep.",
+                "author": "Jesus Christ",
+                "source": "John 10:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "My sheep hear my voice, and I know them, and they follow me.",
+                "author": "Jesus Christ",
+                "source": "John 10:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+                "author": "Jesus Christ",
+                "source": "Matthew 11:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If God be for us, who can be against us?",
+                "author": "Bible",
+                "source": "Romans 8:31 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And we know that all things work together for good to them that love God.",
+                "author": "Bible",
+                "source": "Romans 8:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Casting all your care upon him; for he careth for you.",
+                "author": "Bible",
+                "source": "1 Peter 5:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my light and my salvation; whom shall I fear?",
+                "author": "Bible",
+                "source": "Psalm 27:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be strong and of a good courage... for the LORD thy God is with thee whithersoever thou goest.",
+                "author": "Bible",
+                "source": "Joshua 1:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is nigh unto all them that call upon him.",
+                "author": "Bible",
+                "source": "Psalm 145:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The entrance of thy words giveth light; it giveth understanding unto the simple.",
+                "author": "Bible",
+                "source": "Psalm 119:130 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And ye shall seek me, and find me, when ye shall search for me with all your heart.",
+                "author": "Bible",
+                "source": "Jeremiah 29:13 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Draw nigh to God, and he will draw nigh to you.",
+                "author": "Bible",
+                "source": "James 4:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD redeemeth the soul of his servants: and none of them that trust in him shall be desolate.",
+                "author": "Bible",
+                "source": "Psalm 34:22 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Lonely": [
+              {
+                "text": "I will never leave thee, nor forsake thee.",
+                "author": "Bible",
+                "source": "Hebrews 13:5 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be strong and of a good courage... for the LORD thy God is with thee whithersoever thou goest.",
+                "author": "Bible",
+                "source": "Joshua 1:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God.",
+                "author": "Bible",
+                "source": "Isaiah 41:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "When thou passest through the waters, I will be with thee.",
+                "author": "Bible",
+                "source": "Isaiah 43:2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is nigh unto them that are of a broken heart.",
+                "author": "Bible",
+                "source": "Psalm 34:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is nigh unto all them that call upon him.",
+                "author": "Bible",
+                "source": "Psalm 145:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Cast thy burden upon the LORD, and he shall sustain thee.",
+                "author": "Bible",
+                "source": "Psalm 55:22 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "God is our refuge and strength, a very present help in trouble.",
+                "author": "Bible",
+                "source": "Psalm 46:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me.",
+                "author": "Bible",
+                "source": "Psalm 23:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The eternal God is thy refuge, and underneath are the everlasting arms.",
+                "author": "Bible",
+                "source": "Deuteronomy 33:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+                "author": "Jesus Christ",
+                "source": "Matthew 11:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "I will not leave you comfortless: I will come to you.",
+                "author": "Jesus Christ",
+                "source": "John 14:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Peace I leave with you, my peace I give unto you.",
+                "author": "Jesus Christ",
+                "source": "John 14:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Abide in me, and I in you.",
+                "author": "Jesus Christ",
+                "source": "John 15:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Lo, I am with you alway, even unto the end of the world.",
+                "author": "Jesus Christ",
+                "source": "Matthew 28:20 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Greater love hath no man than this, that a man lay down his life for his friends.",
+                "author": "Jesus Christ",
+                "source": "John 15:13 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Ye are my friends, if ye do whatsoever I command you.",
+                "author": "Jesus Christ",
+                "source": "John 15:14 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Casting all your care upon him; for he careth for you.",
+                "author": "Bible",
+                "source": "1 Peter 5:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Nothing shall be able to separate us from the love of God.",
+                "author": "Bible",
+                "source": "Romans 8:38–39 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If God be for us, who can be against us?",
+                "author": "Bible",
+                "source": "Romans 8:31 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Bear ye one another's burdens, and so fulfil the law of Christ.",
+                "author": "Bible",
+                "source": "Galatians 6:2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A friend loveth at all times.",
+                "author": "Bible",
+                "source": "Proverbs 17:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Two are better than one... For if they fall, the one will lift up his fellow.",
+                "author": "Bible",
+                "source": "Ecclesiastes 4:9–10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "There is a friend that sticketh closer than a brother.",
+                "author": "Bible",
+                "source": "Proverbs 18:24 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is good, a strong hold in the day of trouble; and he knoweth them that trust in him.",
+                "author": "Bible",
+                "source": "Nahum 1:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Blessed be God... the Father of mercies, and the God of all comfort.",
+                "author": "Bible",
+                "source": "2 Corinthians 1:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Who comforteth us in all our tribulation.",
+                "author": "Bible",
+                "source": "2 Corinthians 1:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Draw nigh to God, and he will draw nigh to you.",
+                "author": "Bible",
+                "source": "James 4:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD also will be a refuge for the oppressed, a refuge in times of trouble.",
+                "author": "Bible",
+                "source": "Psalm 9:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Behold, how good and how pleasant it is for brethren to dwell together in unity!",
+                "author": "Bible",
+                "source": "Psalm 133:1 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Angry": [
+              {
+                "text": "Blessed are the peacemakers: for they shall be called the children of God.",
+                "author": "Jesus Christ",
+                "source": "Matthew 5:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you.",
+                "author": "Jesus Christ",
+                "source": "Matthew 5:44 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Judge not, that ye be not judged.",
+                "author": "Jesus Christ",
+                "source": "Matthew 7:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Forgive, and ye shall be forgiven.",
+                "author": "Jesus Christ",
+                "source": "Luke 6:37 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Father, forgive them; for they know not what they do.",
+                "author": "Jesus Christ",
+                "source": "Luke 23:34 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A new commandment I give unto you, That ye love one another; as I have loved you.",
+                "author": "Jesus Christ",
+                "source": "John 13:34 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "By this shall all men know that ye are my disciples, if ye have love one to another.",
+                "author": "Jesus Christ",
+                "source": "John 13:35 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Greater love hath no man than this, that a man lay down his life for his friends.",
+                "author": "Jesus Christ",
+                "source": "John 15:13 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A soft answer turneth away wrath: but grievous words stir up anger.",
+                "author": "Solomon",
+                "source": "Proverbs 15:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "He that is slow to anger is better than the mighty.",
+                "author": "Solomon",
+                "source": "Proverbs 16:32 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Hatred stirreth up strifes: but love covereth all sins.",
+                "author": "Solomon",
+                "source": "Proverbs 10:12 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "He that is slow to wrath is of great understanding.",
+                "author": "Solomon",
+                "source": "Proverbs 14:29 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Cease from anger, and forsake wrath.",
+                "author": "David",
+                "source": "Psalm 37:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is merciful and gracious, slow to anger, and plenteous in mercy.",
+                "author": "David",
+                "source": "Psalm 103:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The discretion of a man deferreth his anger; and it is his glory to pass over a transgression.",
+                "author": "Solomon",
+                "source": "Proverbs 19:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be ye angry, and sin not: let not the sun go down upon your wrath.",
+                "author": "Paul",
+                "source": "Ephesians 4:26 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let all bitterness, and wrath, and anger... be put away from you.",
+                "author": "Paul",
+                "source": "Ephesians 4:31 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you.",
+                "author": "Paul",
+                "source": "Ephesians 4:32 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If it be possible, as much as lieth in you, live peaceably with all men.",
+                "author": "Paul",
+                "source": "Romans 12:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be not overcome of evil, but overcome evil with good.",
+                "author": "Paul",
+                "source": "Romans 12:21 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Dearly beloved, avenge not yourselves.",
+                "author": "Paul",
+                "source": "Romans 12:19 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance.",
+                "author": "Paul",
+                "source": "Galatians 5:22–23 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Put on therefore... kindness, humbleness of mind, meekness, longsuffering.",
+                "author": "Paul",
+                "source": "Colossians 3:12 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Above all these things put on charity, which is the bond of perfectness.",
+                "author": "Paul",
+                "source": "Colossians 3:14 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let the peace of God rule in your hearts.",
+                "author": "Paul",
+                "source": "Colossians 3:15 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be ye therefore followers of God, as dear children; And walk in love.",
+                "author": "Paul",
+                "source": "Ephesians 5:1–2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath.",
+                "author": "James",
+                "source": "James 1:19 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For the wrath of man worketh not the righteousness of God.",
+                "author": "James",
+                "source": "James 1:20 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Above all things have fervent charity among yourselves: for charity shall cover the multitude of sins.",
+                "author": "Peter",
+                "source": "1 Peter 4:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Beloved, let us love one another: for love is of God.",
+                "author": "John",
+                "source": "1 John 4:7 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Afraid": [
+              {
+                "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God.",
+                "author": "Bible",
+                "source": "Isaiah 41:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be strong and of a good courage; be not afraid... for the LORD thy God is with thee whithersoever thou goest.",
+                "author": "Bible",
+                "source": "Joshua 1:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is my light and my salvation; whom shall I fear?",
+                "author": "David",
+                "source": "Psalm 27:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me.",
+                "author": "David",
+                "source": "Psalm 23:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "God is our refuge and strength, a very present help in trouble.",
+                "author": "Sons of Korah",
+                "source": "Psalm 46:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be still, and know that I am God.",
+                "author": "Bible",
+                "source": "Psalm 46:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "What time I am afraid, I will trust in thee.",
+                "author": "David",
+                "source": "Psalm 56:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "In God have I put my trust: I will not fear what flesh can do unto me.",
+                "author": "David",
+                "source": "Psalm 56:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is on my side; I will not fear.",
+                "author": "Bible",
+                "source": "Psalm 118:6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The angel of the LORD encampeth round about them that fear him, and delivereth them.",
+                "author": "David",
+                "source": "Psalm 34:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Cast thy burden upon the LORD, and he shall sustain thee.",
+                "author": "David",
+                "source": "Psalm 55:22 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "When thou passest through the waters, I will be with thee.",
+                "author": "Bible",
+                "source": "Isaiah 43:2 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For the LORD thy God will hold thy right hand, saying unto thee, Fear not; I will help thee.",
+                "author": "Bible",
+                "source": "Isaiah 41:13 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Have not I commanded thee? Be strong and of a good courage.",
+                "author": "Bible",
+                "source": "Joshua 1:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "I sought the LORD, and he heard me, and delivered me from all my fears.",
+                "author": "David",
+                "source": "Psalm 34:4 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Peace I leave with you, my peace I give unto you... Let not your heart be troubled, neither let it be afraid.",
+                "author": "Jesus Christ",
+                "source": "John 14:27 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let not your heart be troubled: ye believe in God, believe also in me.",
+                "author": "Jesus Christ",
+                "source": "John 14:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "These things I have spoken unto you, that in me ye might have peace... be of good cheer; I have overcome the world.",
+                "author": "Jesus Christ",
+                "source": "John 16:33 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.",
+                "author": "Jesus Christ",
+                "source": "Luke 12:32 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be not afraid, only believe.",
+                "author": "Jesus Christ",
+                "source": "Mark 5:36 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "It is I; be not afraid.",
+                "author": "Jesus Christ",
+                "source": "John 6:20 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Lo, I am with you alway, even unto the end of the world.",
+                "author": "Jesus Christ",
+                "source": "Matthew 28:20 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Casting all your care upon him; for he careth for you.",
+                "author": "Peter",
+                "source": "1 Peter 5:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+                "author": "Paul",
+                "source": "2 Timothy 1:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If God be for us, who can be against us?",
+                "author": "Paul",
+                "source": "Romans 8:31 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Nothing shall be able to separate us from the love of God.",
+                "author": "Paul",
+                "source": "Romans 8:38–39 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
+                "author": "Paul",
+                "source": "Philippians 4:6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
+                "author": "Paul",
+                "source": "Philippians 4:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "There is no fear in love; but perfect love casteth out fear.",
+                "author": "John",
+                "source": "1 John 4:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is faithful, who shall stablish you, and keep you from evil.",
+                "author": "Paul",
+                "source": "2 Thessalonians 3:3 (KJV)",
+                "type": "verified"
+              }
+            ],
+            "Regretful": [
+              {
+                "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+                "author": "Jesus Christ",
+                "source": "Matthew 11:28 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For the Son of man is come to seek and to save that which was lost.",
+                "author": "Jesus Christ",
+                "source": "Luke 19:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Neither do I condemn thee: go, and sin no more.",
+                "author": "Jesus Christ",
+                "source": "John 8:11 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "There is joy in the presence of the angels of God over one sinner that repenteth.",
+                "author": "Jesus Christ",
+                "source": "Luke 15:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Him that cometh to me I will in no wise cast out.",
+                "author": "Jesus Christ",
+                "source": "John 6:37 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Repent ye, and believe the gospel.",
+                "author": "Jesus Christ",
+                "source": "Mark 1:15 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
+                "author": "John",
+                "source": "1 John 1:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "As far as the east is from the west, so far hath he removed our transgressions from us.",
+                "author": "David",
+                "source": "Psalm 103:12 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is merciful and gracious, slow to anger, and plenteous in mercy.",
+                "author": "David",
+                "source": "Psalm 103:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Create in me a clean heart, O God; and renew a right spirit within me.",
+                "author": "David",
+                "source": "Psalm 51:10 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The sacrifices of God are a broken spirit: a broken and a contrite heart... thou wilt not despise.",
+                "author": "David",
+                "source": "Psalm 51:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Have mercy upon me, O God, according to thy lovingkindness.",
+                "author": "David",
+                "source": "Psalm 51:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "He restoreth my soul.",
+                "author": "David",
+                "source": "Psalm 23:3 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD is nigh unto them that are of a broken heart.",
+                "author": "David",
+                "source": "Psalm 34:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand.",
+                "author": "David",
+                "source": "Psalm 37:24 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Let the wicked forsake his way... and let him return unto the LORD, and he will have mercy upon him.",
+                "author": "Bible",
+                "source": "Isaiah 55:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Though your sins be as scarlet, they shall be as white as snow.",
+                "author": "Bible",
+                "source": "Isaiah 1:18 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Return unto me... and I will return unto you.",
+                "author": "Bible",
+                "source": "Malachi 3:7 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For I will forgive their iniquity, and I will remember their sin no more.",
+                "author": "Bible",
+                "source": "Jeremiah 31:34 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "A new heart also will I give you, and a new spirit will I put within you.",
+                "author": "Bible",
+                "source": "Ezekiel 36:26 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "There is therefore now no condemnation to them which are in Christ Jesus.",
+                "author": "Paul",
+                "source": "Romans 8:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Where sin abounded, grace did much more abound.",
+                "author": "Paul",
+                "source": "Romans 5:20 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
+                "author": "Paul",
+                "source": "Romans 5:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "If any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.",
+                "author": "Paul",
+                "source": "2 Corinthians 5:17 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "For by grace are ye saved through faith.",
+                "author": "Paul",
+                "source": "Ephesians 2:8 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "In whom we have redemption through his blood, the forgiveness of sins.",
+                "author": "Paul",
+                "source": "Colossians 1:14 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The Lord is not willing that any should perish, but that all should come to repentance.",
+                "author": "Peter",
+                "source": "2 Peter 3:9 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Humble yourselves therefore under the mighty hand of God, that he may exalt you in due time.",
+                "author": "Peter",
+                "source": "1 Peter 5:6 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "Blessed is he whose transgression is forgiven, whose sin is covered.",
+                "author": "David",
+                "source": "Psalm 32:1 (KJV)",
+                "type": "verified"
+              },
+              {
+                "text": "The LORD redeemeth the soul of his servants: and none of them that trust in him shall be desolate.",
+                "author": "David",
+                "source": "Psalm 34:22 (KJV)",
+                "type": "verified"
+              }
+            ]
           }
-        ],
-        "lost": [
-          {
-            "text": "Guide us to the straight path.",
-            "author": "Quran",
-            "source": "Surah Al-Fatihah (1:6)",
-            "type": "verified"
+        },
+        {
+          "id": "hinduism",
+          "name": "Hinduism",
+          "quotes": {
+            "happy": [
+              {
+                "text": "The one who is content in the Self, satisfied in the Self, and fulfilled in the Self has nothing further to achieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 3:17",
+                "type": "verified"
+              },
+              {
+                "text": "One whose mind is undisturbed in happiness and distress is fit for immortality.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:15",
+                "type": "verified"
+              },
+              {
+                "text": "He who is free from attachment, fear, and anger is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:15",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person, whose mind is disciplined, attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "From peace comes the end of all sorrow.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:65",
+                "type": "verified"
+              },
+              {
+                "text": "Whatever you do, whatever you eat, whatever you offer or give, do it as an offering unto Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 9:27",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "The yogi who is united with the Self sees the Self in all beings and all beings in the Self.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:29",
+                "type": "verified"
+              },
+              {
+                "text": "Fix your mind on Me, be devoted to Me, worship Me, and bow to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:65",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall free you from all sin; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "He who is satisfied with whatever comes by chance is free from envy and remains balanced in success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:22",
+                "type": "verified"
+              },
+              {
+                "text": "The wise see with equal vision a learned person, a cow, an elephant, a dog, and one who eats dogs.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:18",
+                "type": "verified"
+              },
+              {
+                "text": "One who delights in the welfare of all beings attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:25",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty with equanimity, abandoning attachment to success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              },
+              {
+                "text": "Yoga is excellence in action.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:50",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "May we hear what is auspicious with our ears; may we see what is auspicious with our eyes.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.8",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Brihadaranyaka Upanishad 1.4.14 (commonly recited as 'Sarve Bhavantu Sukhinah')",
+                "type": "traditional"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation; do not covet what belongs to another.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is bliss.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.7",
+                "type": "verified"
+              },
+              {
+                "text": "He who knows Brahman attains the Supreme.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.1",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "One who has conquered the mind finds peace in heat and cold, pleasure and pain, honor and dishonor.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:7",
+                "type": "verified"
+              },
+              {
+                "text": "He who is devoted with faith is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:20",
+                "type": "verified"
+              },
+              {
+                "text": "Among thousands of people, one strives for perfection; among those who strive, one truly knows Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 7:3",
+                "type": "verified"
+              },
+              {
+                "text": "The wise, established in yoga, abandon attachment to the fruits of action and attain lasting peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:12",
+                "type": "verified"
+              },
+              {
+                "text": "The one who rejoices within, is illuminated within, and is happy within attains liberation.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:24",
+                "type": "verified"
+              }
+            ],
+            "sad": [
+              {
+                "text": "The wise grieve neither for the living nor for the dead.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:11",
+                "type": "verified"
+              },
+              {
+                "text": "The unreal has no existence; the real never ceases to be.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:16",
+                "type": "verified"
+              },
+              {
+                "text": "Just as a person casts off worn-out garments and puts on new ones, so the embodied soul casts off worn-out bodies and enters new ones.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:22",
+                "type": "verified"
+              },
+              {
+                "text": "The soul is never born, nor does it ever die.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:20",
+                "type": "verified"
+              },
+              {
+                "text": "Contact with the objects of the senses gives rise to cold and heat, pleasure and pain; they come and go and are impermanent. Endure them patiently.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:14",
+                "type": "verified"
+              },
+              {
+                "text": "One whose mind remains undisturbed in sorrow and free from craving in happiness is called a sage of steady wisdom.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:56",
+                "type": "verified"
+              },
+              {
+                "text": "From peace comes the end of all sorrow.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:65",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person, whose mind is disciplined, attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "The one who rejoices within, who is illuminated within, attains liberation and the peace of Brahman.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:24",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty with equanimity, abandoning attachment to success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              },
+              {
+                "text": "He who is content with whatever comes by chance remains free from sorrow.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:22",
+                "type": "verified"
+              },
+              {
+                "text": "The Self cannot be cut by weapons, burned by fire, wetted by water, or dried by the wind.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:23",
+                "type": "verified"
+              },
+              {
+                "text": "Fix your mind on Me alone; by My grace you shall overcome every difficulty.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:58",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall free you from all sin; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "The one who has conquered the mind finds peace amid pleasure and pain.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:7",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is bliss.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.7",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings never turns away from it.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 6",
+                "type": "verified"
+              },
+              {
+                "text": "Where there is duality, one sees another; but where everything has become the Self, what sorrow can remain?",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 7",
+                "type": "verified"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Sarve Bhavantu Sukhinah",
+                "type": "traditional"
+              },
+              {
+                "text": "He who delights in the welfare of all beings attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:25",
+                "type": "verified"
+              },
+              {
+                "text": "The yogi whose mind is at peace sees the Divine in every being.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:29",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "Those who worship Me with unwavering devotion are exceedingly dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:20",
+                "type": "verified"
+              },
+              {
+                "text": "The person established in yoga remains balanced in success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              }
+            ],
+            "lost": [
+              {
+                "text": "Fix your mind on Me, be devoted to Me, worship Me, and bow to Me. Thus you shall surely come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:65",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall liberate you from all sin; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "Out of compassion for them, I dwell in their hearts and dispel the darkness born of ignorance with the shining lamp of knowledge.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:11",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your prescribed duty, for action is better than inaction.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 3:8",
+                "type": "verified"
+              },
+              {
+                "text": "You have a right to perform your duty, but not to the fruits of your actions.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:47",
+                "type": "verified"
+              },
+              {
+                "text": "Yoga is excellence in action.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:50",
+                "type": "verified"
+              },
+              {
+                "text": "Raise yourself by your own Self; do not let yourself fall. The Self alone is your friend, and the Self alone is your enemy.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:5",
+                "type": "verified"
+              },
+              {
+                "text": "For one who has conquered the mind, the mind is the best of friends.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:6",
+                "type": "verified"
+              },
+              {
+                "text": "The one who sees Me everywhere and sees everything in Me is never separated from Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:30",
+                "type": "verified"
+              },
+              {
+                "text": "The person who is free from attachment, fear, and anger becomes one with Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:10",
+                "type": "verified"
+              },
+              {
+                "text": "Knowledge is the most sacred purifier in this world.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:38",
+                "type": "verified"
+              },
+              {
+                "text": "The faithful who have mastered their senses attain knowledge; having attained knowledge, they quickly reach supreme peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:39",
+                "type": "verified"
+              },
+              {
+                "text": "The doubting soul finds neither happiness in this world nor in the next.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:40",
+                "type": "verified"
+              },
+              {
+                "text": "When your intellect crosses beyond confusion, you shall become indifferent to what has been heard and what is yet to be heard.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:52",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is not attained by the weak.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.2.4",
+                "type": "verified"
+              },
+              {
+                "text": "Arise! Awake! Approach the great and learn.",
+                "author": "Katha Upanishad",
+                "source": "Katha Upanishad 1.3.14",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is realized by those whom It chooses; to them the Self reveals Its true nature.",
+                "author": "Katha Upanishad",
+                "source": "Katha Upanishad 1.2.23",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings never loses sight of the Truth.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 6",
+                "type": "verified"
+              },
+              {
+                "text": "Where one sees the Self in all beings, what delusion or sorrow can remain?",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 7",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "One who delights in the welfare of all beings attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:25",
+                "type": "verified"
+              },
+              {
+                "text": "The yogi who is united with the Self sees the Self in all beings and all beings in the Self.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:29",
+                "type": "verified"
+              },
+              {
+                "text": "He who is content in the Self, satisfied in the Self, and fulfilled in the Self has nothing further to seek.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 3:17",
+                "type": "verified"
+              },
+              {
+                "text": "Those who seek refuge in Me cross beyond the illusion of My divine power.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 7:14",
+                "type": "verified"
+              }
+            ],
+            "lonely": [
+              {
+                "text": "I am seated in the hearts of all beings.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 15:15",
+                "type": "verified"
+              },
+              {
+                "text": "The Lord dwells in the hearts of all beings, causing them to move according to His divine power.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:61",
+                "type": "verified"
+              },
+              {
+                "text": "The one who sees Me everywhere and sees everything in Me is never separated from Me, nor am I ever separated from him.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:30",
+                "type": "verified"
+              },
+              {
+                "text": "The yogi who sees the Self in all beings and all beings in the Self remains united with Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:29",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees Me in all beings and all beings in Me never loses sight of Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:31",
+                "type": "verified"
+              },
+              {
+                "text": "Fix your mind on Me, be devoted to Me, worship Me, and bow to Me. You shall surely come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:65",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "Out of compassion for them, I dwell in their hearts and dispel the darkness born of ignorance with the lamp of knowledge.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:11",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall liberate you; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person whose mind is disciplined attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "The one who rejoices within, who is illuminated within, attains the peace of Brahman.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:24",
+                "type": "verified"
+              },
+              {
+                "text": "Raise yourself by your own Self; do not let yourself fall. The Self alone is your friend.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:5",
+                "type": "verified"
+              },
+              {
+                "text": "For one who has conquered the mind, the mind is the best of friends.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:6",
+                "type": "verified"
+              },
+              {
+                "text": "He who delights in the welfare of all beings attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:25",
+                "type": "verified"
+              },
+              {
+                "text": "The wise see with equal vision a learned person, a cow, an elephant, a dog, and one who eats dogs.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:18",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings never turns away from the Truth.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 6",
+                "type": "verified"
+              },
+              {
+                "text": "Where one sees the Self in all beings, what delusion or sorrow can remain?",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 7",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is bliss.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.7",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "That Thou Art.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 6.8.7",
+                "type": "verified"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Sarve Bhavantu Sukhinah",
+                "type": "traditional"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "He who knows Brahman attains the Supreme.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.1",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "The faithful devotee is exceedingly dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:20",
+                "type": "verified"
+              },
+              {
+                "text": "Those who seek refuge in Me cross beyond My divine illusion.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 7:14",
+                "type": "verified"
+              },
+              {
+                "text": "I am the same toward all beings; none is hateful or dear to Me. But those who worship Me with devotion dwell in Me, and I dwell in them.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 9:29",
+                "type": "verified"
+              }
+            ],
+            "Angry": [
+              {
+                "text": "From anger comes delusion; from delusion, confused memory; from confused memory, the destruction of intelligence; and from the destruction of intelligence one perishes.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:63",
+                "type": "verified"
+              },
+              {
+                "text": "While contemplating the objects of the senses, attachment arises. From attachment comes desire, and from desire comes anger.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:62",
+                "type": "verified"
+              },
+              {
+                "text": "One whose mind remains undisturbed in sorrow and free from desire amid pleasure, who is free from attachment, fear, and anger, is called a sage of steady wisdom.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:56",
+                "type": "verified"
+              },
+              {
+                "text": "The person who has controlled the senses and fixed the mind in wisdom attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:61",
+                "type": "verified"
+              },
+              {
+                "text": "From peace comes the end of all sorrow.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:65",
+                "type": "verified"
+              },
+              {
+                "text": "The gates leading to hell are three: lust, anger, and greed. Therefore one should abandon these three.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 16:21",
+                "type": "verified"
+              },
+              {
+                "text": "The person who is free from desire, fear, and anger is always liberated.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:28",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person whose mind is disciplined attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "Raise yourself by your own Self; do not let yourself fall. The Self alone is your friend, and the Self alone is your enemy.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:5",
+                "type": "verified"
+              },
+              {
+                "text": "For one who has conquered the mind, the mind is the best of friends.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:6",
+                "type": "verified"
+              },
+              {
+                "text": "One who has conquered the mind remains peaceful in honor and dishonor, pleasure and pain.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:7",
+                "type": "verified"
+              },
+              {
+                "text": "He who hates no creature, who is friendly and compassionate to all, free from ego and possessiveness, is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:13",
+                "type": "verified"
+              },
+              {
+                "text": "One who neither disturbs the world nor is disturbed by it, who is free from joy, envy, fear, and anger, is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:15",
+                "type": "verified"
+              },
+              {
+                "text": "He who is equal toward friend and foe, in honor and dishonor, in heat and cold, in pleasure and pain, is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:18",
+                "type": "verified"
+              },
+              {
+                "text": "The wise remain alike in success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty without attachment to its results.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:47",
+                "type": "verified"
+              },
+              {
+                "text": "The yogi whose mind is disciplined sees the Self in all beings and all beings in the Self.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:29",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees Me everywhere and everything in Me is never separated from Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:30",
+                "type": "verified"
+              },
+              {
+                "text": "He who delights in the welfare of all beings attains peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:25",
+                "type": "verified"
+              },
+              {
+                "text": "Knowledge is the most sacred purifier in this world.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:38",
+                "type": "verified"
+              },
+              {
+                "text": "The faithful who have mastered their senses attain knowledge, and having attained it, quickly reach supreme peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:39",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings cannot hate anyone.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 6",
+                "type": "verified"
+              },
+              {
+                "text": "Where one sees the Self in all beings, what delusion or hatred can remain?",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 7",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy. May we not hate one another.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Sarve Bhavantu Sukhinah",
+                "type": "traditional"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "The one established in wisdom is not shaken by praise or blame.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 14:24–25",
+                "type": "verified"
+              }
+            ],
+            "Afraid": [
+              {
+                "text": "The soul is never born, nor does it ever die.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:20",
+                "type": "verified"
+              },
+              {
+                "text": "Just as a person casts off worn-out garments and puts on new ones, so the embodied soul casts off worn-out bodies and enters new ones.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:22",
+                "type": "verified"
+              },
+              {
+                "text": "The Self cannot be cut by weapons, burned by fire, wetted by water, or dried by the wind.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:23",
+                "type": "verified"
+              },
+              {
+                "text": "Weapons do not cut the Self, fire does not burn it, water does not wet it, and wind does not dry it.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:23",
+                "type": "verified"
+              },
+              {
+                "text": "Contact with the objects of the senses gives rise to pleasure and pain; they come and go. Endure them patiently.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:14",
+                "type": "verified"
+              },
+              {
+                "text": "One whose mind remains undisturbed in sorrow, free from attachment, fear, and anger, is called a sage of steady wisdom.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:56",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty with equanimity, abandoning attachment to success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              },
+              {
+                "text": "Raise yourself by your own Self; do not let yourself fall. The Self alone is your friend.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:5",
+                "type": "verified"
+              },
+              {
+                "text": "For one who has conquered the mind, the mind is the best of friends.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:6",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person whose mind is disciplined attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "The one who sees Me everywhere and sees everything in Me is never separated from Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:30",
+                "type": "verified"
+              },
+              {
+                "text": "Those who seek refuge in Me cross beyond My divine illusion.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 7:14",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "Out of compassion for them, I dwell in their hearts and dispel the darkness born of ignorance with the shining lamp of knowledge.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:11",
+                "type": "verified"
+              },
+              {
+                "text": "The divine qualities include fearlessness, purity of heart, steadfastness in knowledge and yoga, charity, self-control, sacrifice, study, austerity, and honesty.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 16:1",
+                "type": "verified"
+              },
+              {
+                "text": "Fix your mind on Me alone; by My grace you shall overcome every difficulty.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:58",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall liberate you from all sin; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "The Lord dwells in the hearts of all beings.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:61",
+                "type": "verified"
+              },
+              {
+                "text": "I am seated in the hearts of all beings.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 15:15",
+                "type": "verified"
+              },
+              {
+                "text": "Arise! Awake! Approach the great and learn.",
+                "author": "Katha Upanishad",
+                "source": "Katha Upanishad 1.3.14",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is not attained by the weak.",
+                "author": "Katha Upanishad",
+                "source": "Katha Upanishad 1.2.23",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings cannot hate or fear.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verses 6–7",
+                "type": "verified"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Sarve Bhavantu Sukhinah",
+                "type": "traditional"
+              },
+              {
+                "text": "The wise person remains steady in pleasure and pain and is fit for immortality.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:15",
+                "type": "verified"
+              }
+            ],
+            "Regretful": [
+              {
+                "text": "Even if the most sinful person worships Me with exclusive devotion, he is to be considered righteous, for he has made the right resolve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 9:30",
+                "type": "verified"
+              },
+              {
+                "text": "He soon becomes righteous and attains lasting peace. Declare it boldly: My devotee never perishes.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 9:31",
+                "type": "verified"
+              },
+              {
+                "text": "Abandon all forms of duty and take refuge in Me alone. I shall liberate you from all sin; do not grieve.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:66",
+                "type": "verified"
+              },
+              {
+                "text": "Fix your mind on Me alone; by My grace you shall overcome every difficulty.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:58",
+                "type": "verified"
+              },
+              {
+                "text": "Knowledge is the most sacred purifier in this world.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:38",
+                "type": "verified"
+              },
+              {
+                "text": "The faithful, who have mastered their senses, attain knowledge; having attained knowledge, they quickly reach supreme peace.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:39",
+                "type": "verified"
+              },
+              {
+                "text": "Even if you are the worst of sinners, you shall cross over all sin by the boat of knowledge.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:36",
+                "type": "verified"
+              },
+              {
+                "text": "As a blazing fire reduces wood to ashes, so does the fire of knowledge reduce all actions to ashes.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 4:37",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty without attachment to the results.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:47",
+                "type": "verified"
+              },
+              {
+                "text": "Perform your duty with equanimity, abandoning attachment to success and failure.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 2:48",
+                "type": "verified"
+              },
+              {
+                "text": "Raise yourself by your own Self; do not let yourself fall. The Self alone is your friend.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:5",
+                "type": "verified"
+              },
+              {
+                "text": "The one who has conquered the mind finds the mind to be the best of friends.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:6",
+                "type": "verified"
+              },
+              {
+                "text": "The peaceful person whose mind is disciplined attains supreme happiness.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 6:27",
+                "type": "verified"
+              },
+              {
+                "text": "The one who rejoices within, who is illuminated within, attains the peace of Brahman.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 5:24",
+                "type": "verified"
+              },
+              {
+                "text": "To those who are constantly devoted to Me with love, I give the understanding by which they come to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:10",
+                "type": "verified"
+              },
+              {
+                "text": "Out of compassion for them, I dwell in their hearts and dispel the darkness born of ignorance with the shining lamp of knowledge.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 10:11",
+                "type": "verified"
+              },
+              {
+                "text": "He who hates no being, who is friendly and compassionate to all, is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:13",
+                "type": "verified"
+              },
+              {
+                "text": "The devotee who is free from hatred, fear, and anger is dear to Me.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 12:15",
+                "type": "verified"
+              },
+              {
+                "text": "Truth alone triumphs.",
+                "author": "Mundaka Upanishad",
+                "source": "Mundaka Upanishad 3.1.6",
+                "type": "verified"
+              },
+              {
+                "text": "Lead me from the unreal to the Real; from darkness to Light; from death to Immortality.",
+                "author": "Brihadaranyaka Upanishad",
+                "source": "Brihadaranyaka Upanishad 1.3.28",
+                "type": "verified"
+              },
+              {
+                "text": "The knower of the Self crosses beyond sorrow.",
+                "author": "Chandogya Upanishad",
+                "source": "Chandogya Upanishad 7.1",
+                "type": "verified"
+              },
+              {
+                "text": "The Self is bliss.",
+                "author": "Taittiriya Upanishad",
+                "source": "Taittiriya Upanishad 2.7",
+                "type": "verified"
+              },
+              {
+                "text": "One who sees all beings in the Self and the Self in all beings cannot hate anyone.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 6",
+                "type": "verified"
+              },
+              {
+                "text": "Where one sees the Self in all beings, what delusion or sorrow can remain?",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 7",
+                "type": "verified"
+              },
+              {
+                "text": "The whole universe is pervaded by the Lord. Enjoy through renunciation.",
+                "author": "Isha Upanishad",
+                "source": "Isha Upanishad Verse 1",
+                "type": "verified"
+              },
+              {
+                "text": "May we be protected together. May we be nourished together. May we work together with great energy. May we not hate one another.",
+                "author": "Taittiriya Upanishad",
+                "source": "Shanti Mantra",
+                "type": "verified"
+              },
+              {
+                "text": "Let noble thoughts come to us from every side.",
+                "author": "Rig Veda",
+                "source": "Rig Veda 1.89.1",
+                "type": "verified"
+              },
+              {
+                "text": "May all be happy; may all be free from illness; may all see what is auspicious; may none suffer.",
+                "author": "Traditional Vedic Prayer",
+                "source": "Sarve Bhavantu Sukhinah",
+                "type": "traditional"
+              },
+              {
+                "text": "The Lord dwells in the hearts of all beings.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 18:61",
+                "type": "verified"
+              },
+              {
+                "text": "I am seated in the hearts of all beings.",
+                "author": "Lord Krishna",
+                "source": "Bhagavad Gita 15:15",
+                "type": "verified"
+              }
+            ]
           }
-        ],
-        "lonely": [
-          {
-            "text": "Indeed, Allah is with the patient.",
-            "author": "Quran",
-            "source": "Surah Al-Baqarah (2:153)",
-            "type": "verified"
+        },
+        {
+          "id": "buddhism",
+          "name": "Buddhism",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "energetic": [
-          {
-            "text": "Race toward forgiveness from your Lord and a Garden as wide as the heavens and earth.",
-            "author": "Quran",
-            "source": "Surah Al-Hadid (57:21)",
-            "type": "verified"
+        },
+        {
+          "id": "sikhism",
+          "name": "Sikhism",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "confused": [
-          {
-            "text": "And whoever relies upon Allah—then He is sufficient for him.",
-            "author": "Quran",
-            "source": "Surah At-Talaq (65:3)",
-            "type": "verified"
-          }
-        ]
-      }
+        }
+      ]
     },
     {
-      "id": "christianity",
-      "name": "Christianity",
-      "quotes": {
-        "happy": [
-          {
-            "text": "Rejoice always.",
-            "author": "Bible",
-            "source": "1 Thessalonians 5:16",
-            "type": "verified"
+      "id": "philosophy",
+      "name": "Philosophy",
+      "accent": "#8B5CF6",
+      "icon": "library-outline",
+      "subcategories": [
+        {
+          "id": "stoicism",
+          "name": "Stoicism",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "sad": [
-          {
-            "text": "Come to me, all who labor and are heavy laden, and I will give you rest.",
-            "author": "Jesus Christ",
-            "source": "Matthew 11:28",
-            "type": "verified"
+        },
+        {
+          "id": "existentialism",
+          "name": "Existentialism",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "lost": [
-          {
-            "text": "Trust in the Lord with all your heart, and do not lean on your own understanding.",
-            "author": "Bible",
-            "source": "Proverbs 3:5–6",
-            "type": "verified"
+        },
+        {
+          "id": "socrates",
+          "name": "Socrates",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "lonely": [
-          {
-            "text": "I will never leave you nor forsake you.",
-            "author": "Bible",
-            "source": "Hebrews 13:5",
-            "type": "verified"
+        },
+        {
+          "id": "aristotle",
+          "name": "Aristotle",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "energetic": [
-          {
-            "text": "I can do all things through Him who strengthens me.",
-            "author": "Bible",
-            "source": "Philippians 4:13",
-            "type": "verified"
+        },
+        {
+          "id": "confucius",
+          "name": "Confucius",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "confused": [
-          {
-            "text": "Your word is a lamp to my feet and a light to my path.",
-            "author": "Bible",
-            "source": "Psalm 119:105",
-            "type": "verified"
-          }
-        ]
-      }
+        }
+      ]
     },
     {
-      "id": "hinduism",
-      "name": "Hinduism",
-      "quotes": {
-        "happy": [
-          {
-            "text": "One who is not disturbed by happiness and distress is certainly eligible for liberation.",
-            "author": "Bhagavad Gita",
-            "source": "2:15",
-            "type": "verified"
+      "id": "anime",
+      "name": "Anime",
+      "accent": "#EC4899",
+      "icon": "sparkles-outline",
+      "subcategories": [
+        {
+          "id": "naruto",
+          "name": "Naruto",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "sad": [
-          {
-            "text": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.",
-            "author": "Bhagavad Gita",
-            "source": "2:47",
-            "type": "verified"
+        },
+        {
+          "id": "one-piece",
+          "name": "One Piece",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "lost": [
-          {
-            "text": "Whenever righteousness declines and unrighteousness rises, I manifest Myself.",
-            "author": "Bhagavad Gita",
-            "source": "4:7",
-            "type": "verified"
+        },
+        {
+          "id": "attack-on-titan",
+          "name": "Attack on Titan",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "lonely": [
-          {
-            "text": "The Supreme Lord is situated in everyone's heart.",
-            "author": "Bhagavad Gita",
-            "source": "18:61",
-            "type": "verified"
+        },
+        {
+          "id": "demon-slayer",
+          "name": "Demon Slayer",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "energetic": [
-          {
-            "text": "Therefore arise and perform your duty.",
-            "author": "Bhagavad Gita",
-            "source": "2:37",
-            "type": "verified"
+        },
+        {
+          "id": "dragon-ball",
+          "name": "Dragon Ball",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ],
-        "confused": [
-          {
-            "text": "Surrender unto Me alone. I shall deliver you from all sinful reactions. Do not fear.",
-            "author": "Bhagavad Gita",
-            "source": "18:66",
-            "type": "verified"
+        }
+      ]
+    },
+    {
+      "id": "tv-series",
+      "name": "TV Series",
+      "accent": "#0EA5E9",
+      "icon": "tv-outline",
+      "subcategories": [
+        {
+          "id": "breaking-bad",
+          "name": "Breaking Bad",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
           }
-        ]
-      }
+        },
+        {
+          "id": "friends",
+          "name": "Friends",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "the-office",
+          "name": "The Office",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "game-of-thrones",
+          "name": "Game of Thrones",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "sherlock",
+          "name": "Sherlock",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "movies",
+      "name": "Movies",
+      "accent": "#F97316",
+      "icon": "film-outline",
+      "subcategories": [
+        {
+          "id": "interstellar",
+          "name": "Interstellar",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "the-dark-knight",
+          "name": "The Dark Knight",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "the-matrix",
+          "name": "The Matrix",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "the-pursuit-of-happyness",
+          "name": "The Pursuit of Happyness",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "lord-of-the-rings",
+          "name": "The Lord of the Rings",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "historical-leaders",
+      "name": "Historical Leaders",
+      "accent": "#F59E0B",
+      "icon": "flag-outline",
+      "subcategories": [
+        {
+          "id": "gandhi",
+          "name": "Mahatma Gandhi",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "mandela",
+          "name": "Nelson Mandela",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "lincoln",
+          "name": "Abraham Lincoln",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "churchill",
+          "name": "Winston Churchill",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "julius-caesar",
+          "name": "Julius Caesar",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "scientists",
+      "name": "Scientists",
+      "accent": "#14B8A6",
+      "icon": "flask-outline",
+      "subcategories": [
+        {
+          "id": "einstein",
+          "name": "Albert Einstein",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "newton",
+          "name": "Isaac Newton",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "tesla",
+          "name": "Nikola Tesla",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "hawking",
+          "name": "Stephen Hawking",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "curie",
+          "name": "Marie Curie",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "entrepreneurs",
+      "name": "Entrepreneurs",
+      "accent": "#10B981",
+      "icon": "briefcase-outline",
+      "subcategories": [
+        {
+          "id": "steve-jobs",
+          "name": "Steve Jobs",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "elon-musk",
+          "name": "Elon Musk",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "bill-gates",
+          "name": "Bill Gates",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "jeff-bezos",
+          "name": "Jeff Bezos",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "warren-buffett",
+          "name": "Warren Buffett",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "accent": "#EF4444",
+      "icon": "football-outline",
+      "subcategories": [
+        {
+          "id": "michael-jordan",
+          "name": "Michael Jordan",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "kobe-bryant",
+          "name": "Kobe Bryant",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "muhammad-ali",
+          "name": "Muhammad Ali",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "lionel-messi",
+          "name": "Lionel Messi",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "cristiano-ronaldo",
+          "name": "Cristiano Ronaldo",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "name": "Literature",
+      "accent": "#A855F7",
+      "icon": "bookmarks-outline",
+      "subcategories": [
+        {
+          "id": "shakespeare",
+          "name": "William Shakespeare",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "tolkien",
+          "name": "J.R.R. Tolkien",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "cs-lewis",
+          "name": "C.S. Lewis",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "jane-austen",
+          "name": "Jane Austen",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "dostoevsky",
+          "name": "Fyodor Dostoevsky",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology",
+      "accent": "#06B6D4",
+      "icon": "brain-outline",
+      "subcategories": [
+        {
+          "id": "carl-jung",
+          "name": "Carl Jung",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "viktor-frankl",
+          "name": "Viktor Frankl",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "freud",
+          "name": "Sigmund Freud",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "william-james",
+          "name": "William James",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "jordan-peterson",
+          "name": "Jordan Peterson",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "military-strategy",
+      "name": "Military & Strategy",
+      "accent": "#64748B",
+      "icon": "shield-outline",
+      "subcategories": [
+        {
+          "id": "sun-tzu",
+          "name": "Sun Tzu",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "musashi",
+          "name": "Miyamoto Musashi",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "napoleon",
+          "name": "Napoleon Bonaparte",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "art-of-war",
+          "name": "The Art of War",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "book-of-five-rings",
+          "name": "The Book of Five Rings",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "accent": "#E11D48",
+      "icon": "musical-notes-outline",
+      "subcategories": [
+        {
+          "id": "taylor-swift",
+          "name": "Taylor Swift",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "eminem",
+          "name": "Eminem",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "bob-marley",
+          "name": "Bob Marley",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "ar-rahman",
+          "name": "A.R. Rahman",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "beatles",
+          "name": "The Beatles",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "accent": "#22C55E",
+      "icon": "game-controller-outline",
+      "subcategories": [
+        {
+          "id": "god-of-war",
+          "name": "God of War",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "red-dead-redemption-2",
+          "name": "Red Dead Redemption 2",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "witcher-3",
+          "name": "The Witcher 3",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "ghost-of-tsushima",
+          "name": "Ghost of Tsushima",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "zelda",
+          "name": "The Legend of Zelda",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mythology",
+      "name": "Mythology",
+      "accent": "#7C3AED",
+      "icon": "planet-outline",
+      "subcategories": [
+        {
+          "id": "greek",
+          "name": "Greek Mythology",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "norse",
+          "name": "Norse Mythology",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "egyptian",
+          "name": "Egyptian Mythology",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "hindu",
+          "name": "Hindu Mythology",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        },
+        {
+          "id": "japanese",
+          "name": "Japanese Mythology",
+          "quotes": {
+            "happy": [],
+            "sad": [],
+            "lost": [],
+            "lonely": [],
+            "energetic": [],
+            "confused": []
+          }
+        }
+      ]
     }
-  ]
-}
   ],
   "quoteTemplates": {
     "happy": [
@@ -379,6 +5028,3 @@
     ]
   }
 }
-
-
-
