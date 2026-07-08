@@ -8,6 +8,8 @@ import {
   useWindowDimensions,
   View,
   StyleSheet,
+  Platform,
+  ActivityIndicator,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './src/css/Styles';
@@ -24,6 +26,7 @@ import QuotePage from './src/pages/Quote';
 import PickerPage from './src/pages/SelectionPage';
 import ProfilePage from './src/pages/ProfilePage';
 import { logMood } from './src/api/history';
+const BACKEND_URL = 'http://192.168.0.4:6000'
 
 const moods = ['Happy', 'Sad', 'Lost', 'Lonely', 'Angry', 'Afraid', 'Regretful'] as const;
 
@@ -70,10 +73,31 @@ const getRandomIndex = (length: number) => Math.floor(Math.random() * length);
 function AppShell() {
   const { colors, isDark, toggleTheme } = useAppTheme();
   const [step, setStep] = useState<Step>('category');
+  const [categories, setCategories] = useState<Category[]>(quoteData.categories);
+  const [isLoading, setIsLoading] = useState(false);
   const [category, setCategory] = useState<Category | null>(null);
   const [subcategory, setSubcategory] = useState<Subcategory | null>(null);
   const [mood, setMood] = useState<Mood | null>(null);
   const [quoteIndex, setQuoteIndex] = useState(0);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch(`${BACKEND_URL}/api/categories`);
+        console.log('response', response)
+        if (response.ok) {
+          const data = await response.json();
+          if (data.categories && data.categories.length > 0) {
+            setCategories(data.categories);
+            console.log('Successfully loaded categories from backend.');
+          }
+        }
+      } catch (err) {
+        console.log('Failed to fetch from backend, using local fallback:', err);
+      }
+    };
+    fetchCategories();
+  }, []);
   const { width } = useWindowDimensions();
   const entrance = useRef(new Animated.Value(1)).current;
   const float = useRef(new Animated.Value(0)).current;
@@ -181,11 +205,34 @@ function AppShell() {
     setStep('subcategory');
   };
 
-  const selectSubcategory = (nextSubcategory: Subcategory) => {
-    setSubcategory(nextSubcategory);
-    setMood(null);
-    setQuoteIndex(0);
-    setStep('mood');
+  const selectSubcategory = async (nextSubcategory: Subcategory) => {
+    setIsLoading(true);
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/subcategories/${nextSubcategory.id}`);
+      if (response.ok) {
+        const fullSub = await response.json();
+        setSubcategory(fullSub);
+      } else {
+        // Fallback to local subcategory data
+        const localCategory = quoteData.categories.find(c => c.id === category?.id);
+        const localSub = localCategory?.subcategories.find(s => s.id === nextSubcategory.id);
+        if (localSub) {
+          setSubcategory(localSub as any);
+        }
+      }
+    } catch (error) {
+      console.log('Error fetching subcategory, falling back to local:', error);
+      const localCategory = quoteData.categories.find(c => c.id === category?.id);
+      const localSub = localCategory?.subcategories.find(s => s.id === nextSubcategory.id);
+      if (localSub) {
+        setSubcategory(localSub as any);
+      }
+    } finally {
+      setIsLoading(false);
+      setMood(null);
+      setQuoteIndex(0);
+      setStep('mood');
+    }
   };
 
   const selectMood = (nextMood: Mood) => {
@@ -414,63 +461,72 @@ function AppShell() {
             panelStyle
           ]}
         >
-          console.log("Category: ",quoteData)
-          {step === 'category' && (
-            <PickerPage
-              color={themeColor}
-              compact={compact}
-              columns={optionColumns}
-              eyebrow="Theme"
-              // illustration="📚"
-              title="Choose Source of Wisdom"
-              subtitle="Select a collection of voices that inspires you."
-              options={quoteData.categories.map((item) => ({
-                id: item.id,
-                label: item.name,
-                accent: item.accent,
-                detail: `${item.subcategories.length} personalities`,
-                icon: categoryIcons[item.id] ?? "book-outline",
-                onPress: () => selectCategory(item),
-              }))}
-            />
-          )}
+          {isLoading ? (
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', minHeight: 300 }}>
+              <ActivityIndicator size="large" color={themeColor} />
+              <Text style={{ marginTop: 16, color: colors.textSub, fontSize: 16, fontWeight: '600' }}>
+                Loading wisdom...
+              </Text>
+            </View>
+          ) : (
+            <>
+              {step === 'category' && (
+                <PickerPage
+                  color={themeColor}
+                  compact={compact}
+                  columns={optionColumns}
+                  eyebrow="Theme"
+                  title="Choose Source of Wisdom"
+                  subtitle="Select a collection of voices that inspires you."
+                  options={categories.map((item) => ({
+                    id: item.id,
+                    label: item.name,
+                    accent: item.accent,
+                    detail: `${item.subcategories.length} personalities`,
+                    icon: categoryIcons[item.id] ?? "book-outline",
+                    onPress: () => selectCategory(item),
+                  }))}
+                />
+              )}
 
-          {step === 'subcategory' && category && (
-            <PickerPage
-              color={category.accent}
-              compact={compact}
-              columns={optionColumns}
-              eyebrow={category.name}
-              title="Choose a Personality"
-              subtitle="Pick someone whose perspective you'd like to hear."
-              options={category.subcategories.map((item) => ({
-                id: item.id,
-                label: item.name,
-                accent: category.accent,
-                detail: `6 moods`,
-                icon: 'person-outline',
-                onPress: () => selectSubcategory(item),
-              }))}
-            />
-          )}
+              {step === 'subcategory' && category && (
+                <PickerPage
+                  color={category.accent}
+                  compact={compact}
+                  columns={optionColumns}
+                  eyebrow={category.name}
+                  title="Choose a Personality"
+                  subtitle="Pick someone whose perspective you'd like to hear."
+                  options={category.subcategories.map((item) => ({
+                    id: item.id,
+                    label: item.name,
+                    accent: category.accent,
+                    detail: `6 moods`,
+                    icon: 'person-outline',
+                    onPress: () => selectSubcategory(item),
+                  }))}
+                />
+              )}
 
-          {step === 'mood' && subcategory && (
-            <PickerPage
-              color={themeColor}
-              compact={compact}
-              columns={optionColumns}
-              eyebrow="Mood"
-              title="How are you feeling today?"
-              subtitle="Choose the emotion that best matches your current state."
-              options={moods.map((item) => ({
-                id: item,
-                label: moodThemes[item].label,
-                accent: moodThemes[item].color,
-                detail: moodThemes[item].glyph,
-                icon: moodIcons[item],
-                onPress: () => selectMood(item),
-              }))}
-            />
+              {step === 'mood' && subcategory && (
+                <PickerPage
+                  color={themeColor}
+                  compact={compact}
+                  columns={optionColumns}
+                  eyebrow="Mood"
+                  title="How are you feeling today?"
+                  subtitle="Choose the emotion that best matches your current state."
+                  options={moods.map((item) => ({
+                    id: item,
+                    label: moodThemes[item].label,
+                    accent: moodThemes[item].color,
+                    detail: moodThemes[item].glyph,
+                    icon: moodIcons[item],
+                    onPress: () => selectMood(item),
+                  }))}
+                />
+              )}
+            </>
           )}
 
           {step === 'quote' && category && subcategory && mood && (
