@@ -14,15 +14,16 @@ import { useAppTheme } from '../context/ThemeContext';
 import styles from '../css/Styles';
 import { getMoodHistory, clearHistory, MoodEntry, Mood } from '../api/history';
 
-const moodsList = ['happy', 'sad', 'lost', 'lonely', 'energetic', 'confused'] as const;
+const moodsList = ['Happy', 'Sad', 'Lost', 'Lonely', 'Angry', 'Afraid', 'Regretful'] as const;
 
 const moodThemes: Record<Mood, { color: string; glyph: string; label: string; icon: any }> = {
-  happy: { color: '#F7C948', glyph: '☀️', label: 'Happy', icon: 'sunny-outline' },
-  sad: { color: '#5E81AC', glyph: '🌧️', label: 'Sad', icon: 'rainy-outline' },
-  lost: { color: '#8A7A63', glyph: '🧭', label: 'Lost', icon: 'compass-outline' },
-  lonely: { color: '#8D5CF6', glyph: '🌙', label: 'Lonely', icon: 'moon-outline' },
-  energetic: { color: '#F15BB5', glyph: '⚡', label: 'Energetic', icon: 'flash-outline' },
-  confused: { color: '#00A6D6', glyph: '🌀', label: 'Confused', icon: 'help-circle-outline' },
+  Happy: { color: '#F7C948', glyph: '☀️', label: 'Happy', icon: 'sunny-outline' },
+  Sad: { color: '#5E81AC', glyph: '🌧️', label: 'Sad', icon: 'rainy-outline' },
+  Lost: { color: '#8A7A63', glyph: '🧭', label: 'Lost', icon: 'compass-outline' },
+  Lonely: { color: '#8D5CF6', glyph: '🌙', label: 'Lonely', icon: 'moon-outline' },
+  Angry: { color: '#F15BB5', glyph: '⚡', label: 'Angry', icon: 'flash-outline' },
+  Afraid: { color: '#00A6D6', glyph: '🌀', label: 'Confused', icon: 'help-circle-outline' },
+  Regretful: { color: '#00A6D6', glyph: '🌀', label: 'Confused', icon: 'help-circle-outline' },
 };
 
 type Duration = 'week' | 'month' | 'year' | 'all';
@@ -70,10 +71,10 @@ export default function ProfilePage() {
   const filteredHistory = useMemo(() => {
     const now = Date.now();
     const msInDay = 24 * 60 * 60 * 1000;
-    
+
     return history.filter(entry => {
       if (duration === 'all') return true;
-      
+
       const diffDays = (now - entry.timestamp) / msInDay;
       if (duration === 'week') return diffDays <= 7;
       if (duration === 'month') return diffDays <= 30;

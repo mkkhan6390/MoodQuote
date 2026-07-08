@@ -1,11 +1,12 @@
 {
   "moods": [
-    "happy",
-    "sad",
-    "lost",
-    "lonely",
-    "energetic",
-    "confused"
+    "Happy",
+    "Sad",
+    "Lost",
+    "Lonely",
+    "Afraid",
+    "Angry",
+    "Regretful"
   ],
   "categories": [
     {

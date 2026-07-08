@@ -1,6 +1,6 @@
 import * as FileSystem from 'expo-file-system/legacy';
 
-export type Mood = 'happy' | 'sad' | 'lost' | 'lonely' | 'energetic' | 'confused';
+export type Mood = 'Happy' | 'Sad' | 'Lost' | 'Lonely' | 'Afraid' | 'Angry' | 'Regretful';
 
 export interface MoodEntry {
   id: string;
@@ -13,6 +13,10 @@ export interface MoodEntry {
 const HISTORY_FILE = FileSystem.documentDirectory + 'mood_history.json';
 
 export async function getMoodHistory(): Promise<MoodEntry[]> {
+  //   await FileSystem.writeAsStringAsync(
+  //   HISTORY_FILE,
+  //   JSON.stringify([])
+  // );
   try {
     const info = await FileSystem.getInfoAsync(HISTORY_FILE);
     if (!info.exists) {

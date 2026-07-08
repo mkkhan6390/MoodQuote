@@ -25,7 +25,7 @@ import PickerPage from './src/pages/SelectionPage';
 import ProfilePage from './src/pages/ProfilePage';
 import { logMood } from './src/api/history';
 
-const moods = ['happy', 'sad', 'lost', 'lonely', 'energetic', 'confused'] as const;
+const moods = ['Happy', 'Sad', 'Lost', 'Lonely', 'Angry', 'Afraid', 'Regretful'] as const;
 
 type Mood = (typeof moods)[number];
 type Category = (typeof quoteData.categories)[number];
@@ -35,12 +35,13 @@ type Step = 'category' | 'subcategory' | 'mood' | 'quote' | 'profile';
 const steps: Step[] = ['category', 'subcategory', 'mood', 'quote'];
 
 const moodThemes: Record<Mood, { color: string; glyph: string; label: string }> = {
-  happy: { color: '#F7C948', glyph: 'Sun', label: 'Happy' },
-  sad: { color: '#5E81AC', glyph: 'Rain', label: 'Sad' },
-  lost: { color: '#8A7A63', glyph: 'Map', label: 'Lost' },
-  lonely: { color: '#8D5CF6', glyph: 'Moon', label: 'Lonely' },
-  energetic: { color: '#F15BB5', glyph: 'Bolt', label: 'Energetic' },
-  confused: { color: '#00A6D6', glyph: 'Maze', label: 'Confused' },
+  Happy: { color: '#F7C948', glyph: 'Sun', label: 'Happy' },
+  Sad: { color: '#5E81AC', glyph: 'Rain', label: 'Sad' },
+  Lost: { color: '#8A7A63', glyph: 'Map', label: 'Lost' },
+  Lonely: { color: '#8D5CF6', glyph: 'Moon', label: 'Lonely' },
+  Angry: { color: '#F15BB5', glyph: 'Bolt', label: 'Angry' },
+  Afraid: { color: '#F15BB5', glyph: 'Bolt', label: 'Afraid' },
+  Regretful: { color: '#00A6D6', glyph: 'Maze', label: 'Regretful' },
 };
 
 const categoryIcons: Record<string, React.ComponentProps<typeof Ionicons>['name']> = {
@@ -54,12 +55,13 @@ const categoryIcons: Record<string, React.ComponentProps<typeof Ionicons>['name'
 };
 
 const moodIcons: Record<Mood, React.ComponentProps<typeof Ionicons>['name']> = {
-  happy: 'sunny-outline',
-  sad: 'rainy-outline',
-  lonely: 'moon-outline',
-  energetic: 'flash-outline',
-  confused: 'help-circle-outline',
-  lost: 'compass-outline',
+  Happy: 'sunny-outline',
+  Sad: 'rainy-outline',
+  Lonely: 'moon-outline',
+  Angry: 'flash-outline',
+  Afraid: 'help-circle-outline',
+  Regretful: 'help-circle-outline',
+  Lost: 'help-circle-outline',
 };
 
 const getRandomIndex = (length: number) => Math.floor(Math.random() * length);

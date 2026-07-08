@@ -1,30 +1,34 @@
 // src/constants/backgrounds.ts
 
 export const quoteBackgrounds = {
-  happy: [
+  Happy: [
     require("../../assets/icon.png"),
     // require("../../assets/backgrounds/happy/flowers.jpg"),
     // require("../../assets/backgrounds/happy/beach.jpg"),
   ],
 
-  sad: [
+  Sad: [
     require("../../assets/backgrounds/sad/rain.jpg"),
     require("../../assets/backgrounds/sad/window.jpg"),
   ],
 
-  lonely: [
+  Lonely: [
     require("../../assets/backgrounds/lonely/moon.jpg"),
   ],
 
-  lost: [
+  Lost: [
     require("../../assets/backgrounds/lost/mountains.jpg"),
   ],
 
-  energetic: [
+  Afraid: [
     require("../../assets/backgrounds/energetic/sunrise2.jpg"),
   ],
 
-  confused: [
+  Angry: [
+    require("../../assets/backgrounds/confused/fog.jpg"),
+  ],
+
+  Regretful: [
     require("../../assets/backgrounds/confused/fog.jpg"),
   ],
 };
