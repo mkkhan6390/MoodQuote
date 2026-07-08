@@ -11,6 +11,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/moodqu
 
 app.use(cors());
 app.use(express.json());
+app.use('/api/diary', require('./routes/diary'));
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI)

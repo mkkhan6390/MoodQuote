@@ -11,6 +11,7 @@ import * as Haptics from 'expo-haptics';
 
 import QuoteCard from '../components/QuoteCard';
 import QuoteActions from '../components/QuoteActions';
+import DiaryForm from '../components/DiaryForm';
 import useQuoteExport from '../hooks/useQuoteExport';
 import { useAppTheme } from '../context/ThemeContext';
 import { logMood, Mood } from '../api/history';
@@ -47,6 +48,7 @@ export default function QuotePage({
   const { colors, isDark } = useAppTheme();
   const cardRef = useRef<View>(null);
   const [isLogged, setIsLogged] = useState(false);
+  const [showDiaryForm, setShowDiaryForm] = useState(false);
 
   const {
     downloadQuote,
@@ -127,6 +129,36 @@ export default function QuotePage({
           </Pressable>
         )}
       </View>
+
+      {/* Diary Entry Button */}
+      <View style={styles.logButtonContainer}>
+        <Pressable
+          onPress={() => {
+            Haptics.selectionAsync();
+            setShowDiaryForm(true);
+          }}
+          style={({ pressed }) => [
+            styles.logBtn,
+            {
+              backgroundColor: 'transparent',
+              borderColor: colors.border,
+              borderStyle: 'dashed' as const,
+              opacity: pressed ? 0.85 : 1,
+            },
+          ]}
+        >
+          <Ionicons name="book-outline" size={17} color={colors.textSub} />
+          <Text style={[styles.logBtnText, { color: colors.textSub }]}>Write Diary Entry</Text>
+        </Pressable>
+      </View>
+
+      {/* Diary Form Modal */}
+      <DiaryForm
+        visible={showDiaryForm}
+        onClose={() => setShowDiaryForm(false)}
+        onSaved={() => {}}
+        prefilledMood={mood as Mood}
+      />
 
       <QuoteActions
         accentColor={color}

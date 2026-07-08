@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import DiaryPager from '../components/DiaryPager';
 import {
   ScrollView,
   StyleSheet,
@@ -191,7 +192,7 @@ export default function ProfilePage() {
     return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
   };
 
-  type ProfileTab = 'graph' | 'stats' | 'history';
+  type ProfileTab = 'graph' | 'stats' | 'history' | 'diary';
   const [activeTab, setActiveTab] = useState<ProfileTab>('graph');
 
   // Mood timeline trend for the Graph tab (last 6 entries)
@@ -205,8 +206,9 @@ export default function ProfilePage() {
       <View style={[styles.tabsRow, { backgroundColor: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)', marginBottom: 14 }]}>
         {([
           { id: 'graph', label: 'Graph', icon: 'bar-chart-outline' },
-          { id: 'stats', label: 'Statistics', icon: 'pie-chart-outline' },
-          { id: 'history', label: 'History', icon: 'list-outline' }
+          { id: 'stats', label: 'Stats', icon: 'pie-chart-outline' },
+          { id: 'history', label: 'History', icon: 'list-outline' },
+          { id: 'diary', label: 'Diary', icon: 'book-outline' }
         ] as const).map(tabItem => {
           const active = activeTab === tabItem.id;
           return (
@@ -473,6 +475,11 @@ export default function ProfilePage() {
               )}
             </View>
           </View>
+        )}
+
+        {/* VIEW 4: DIARY */}
+        {activeTab === 'diary' && (
+          <DiaryPager />
         )}
       </ScrollView>
     </Animated.View>
