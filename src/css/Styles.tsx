@@ -354,6 +354,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '800',
     letterSpacing: 0.1,
+    textAlign: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
   },
 
   chartRow: {
@@ -363,6 +366,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 8,
     paddingBottom: 6,
+    marginTop: 50,
   },
 
   chartCol: {
@@ -394,6 +398,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     padding: 4,
     gap: 4,
+    marginBottom: 15,
   },
 
   tab: {

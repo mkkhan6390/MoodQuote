@@ -43,7 +43,7 @@ export default function QuoteCard({
           isDark ? "rgba(0,0,0,0.15)" : "rgba(0,0,0,0.05)",
           isDark ? "rgba(0,0,0,0.55)" : "rgba(0,0,0,0.40)"
         ]}
-        style={StyleSheet.absoluteFill}
+      // style={StyleSheet.absoluteFill}
       />
 
       {/* Frosted glass card */}
@@ -77,7 +77,7 @@ export default function QuoteCard({
           <View style={styles.quoteSection}>
             <Text style={[styles.quoteMark, { color: accentColor }]}>❝</Text>
 
-            <Text style={[styles.quote, { color: isDark ? "#FFFFFF" : "#0D0F1A" }]} numberOfLines={8}>
+            <Text style={[styles.quote, { color: isDark ? "#FFFFFF" : "#0D0F1A", textShadowColor: isDark ? "rgba(0,0,0,1)" : "rgba(255,255,255,1)" }]} numberOfLines={8}>
               {quote.text}
             </Text>
 
@@ -103,7 +103,7 @@ export default function QuoteCard({
               </Text>
             </View>
             {!!quote.source && (
-              <Text style={[styles.source, { color: isDark ? "rgba(255,255,255,0.60)" : "rgba(0,0,0,0.50)" }]}>
+              <Text style={[styles.source, { color: isDark ? "rgba(255,255,255,1)" : "rgba(0,0,0,1" }]}>
                 {quote.source}
               </Text>
             )}
@@ -187,10 +187,9 @@ const styles = StyleSheet.create({
     fontSize: 22,
     lineHeight: 33,
     color: "#FFFFFF",
-    fontWeight: "700",
+    fontWeight: "900",
     textAlign: "center",
     letterSpacing: 0.2,
-    textShadowColor: "rgba(0,0,0,0.4)",
     textShadowRadius: 6,
     textShadowOffset: { width: 0, height: 2 },
   },
@@ -231,9 +230,10 @@ const styles = StyleSheet.create({
   },
 
   source: {
-    color: "rgba(255,255,255,0.60)",
+    color: "rgba(249, 253, 71, 1)",
     fontSize: 12,
     textAlign: "center",
     fontStyle: "italic",
+    fontWeight: 900,
   },
 });

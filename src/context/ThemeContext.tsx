@@ -24,7 +24,7 @@ export const darkColors = {
   actionBar: 'rgba(20,22,40,0.60)',
   // BlurView
   blurTint: 'dark' as const,
-  blurIntensity: 60,
+  blurIntensity: 5,
   overlay: 'rgba(0,0,0,0.28)',
   // Status bar
   statusBar: 'light' as const,
@@ -47,7 +47,7 @@ export const lightColors = {
   actionBar: 'rgba(255,255,255,0.72)',
   // BlurView
   blurTint: 'light' as const,
-  blurIntensity: 50,
+  blurIntensity: 5,
   overlay: 'rgba(0,0,0,0.15)',
   // Status bar
   statusBar: 'dark' as const,

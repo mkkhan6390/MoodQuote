@@ -246,8 +246,8 @@ export default function ProfilePage() {
           <View style={{ gap: 20 }}>
             {/* Graphical Analytics Chart */}
             <View style={[styles.chartCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+              <Text style={[styles.chartTitle, { color: colors.text }]}>Mood Distribution</Text>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Text style={[styles.chartTitle, { color: colors.text }]}>Mood Distribution</Text>
                 {/* Duration Selector Tabs */}
                 <View style={[styles.tabsRow, { backgroundColor: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.03)', alignSelf: 'flex-start' }]}>
                   {(['week', 'month', 'year', 'all'] as const).map(t => {
